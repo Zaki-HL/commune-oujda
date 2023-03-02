@@ -7,7 +7,7 @@ This repository contains a React project built with Vite.
 To install the project, clone this repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/MeReda/commune-project.git
+git clone https://github.com/MeReda/commune-oujda.git
 ```
 
 ```bash
