@@ -11,7 +11,7 @@ git clone https://github.com/MeReda/commune-oujda.git
 ```
 
 ```bash
-cd commune-project
+cd commune-oujda
 ```
 
 Then, install the dependencies using npm:
