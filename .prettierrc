@@ -5,7 +5,5 @@
 	"trailingComma": "all",
 	"bracketSpacing": true,
 	"jsxBracketSameLine": false,
-	"arrowParens": "avoid",
-	"parser": "babel",
-	"sass": true
+	"arrowParens": "avoid"
 }
