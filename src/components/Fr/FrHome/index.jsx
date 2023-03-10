@@ -1,13 +1,13 @@
 import './index.scss';
 import React from 'react';
-import NavBar from './NavBar';
-import Landing from './Landing';
+import FrNavBar from './FrNavBar';
+import FrLanding from './FrLanding';
 
 const Home = () => {
 	return (
 		<>
-			<NavBar />
-			<Landing />
+			<FrNavBar />
+			<FrLanding />
 		</>
 	);
 };

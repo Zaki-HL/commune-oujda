@@ -1,10 +1,10 @@
 import './App.scss';
-import Home from './components/Home';
+import FrHome from './components/Fr/FrHome';
 
 const App = () => {
 	return (
 		<div className="App">
-			<Home />
+			<FrHome />
 		</div>
 	);
 };
