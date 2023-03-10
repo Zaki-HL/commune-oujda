@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const ArNavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-md bg-body-tertiary">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
+				<Link className="navbar-brand" to="/ar">
 					LOGO
-				</a>
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -23,21 +23,21 @@ const ArNavBar = () => {
 					className="collapse navbar-collapse text-end"
 					id="navbarNavAltMarkup"
 				>
-					<div className="navbar-nav ms-auto">
+					<div className="navbar-nav me-auto">
 						<NavLink className="nav-link" to="annonces">
-							Annonces
+							اعلانات
 						</NavLink>
 						<NavLink className="nav-link" to="ma-ville">
-							Ma Ville
+							مدينتي
 						</NavLink>
-						<NavLink className="nav-link" to="Arrondissements">
-							Arrondissements
+						<NavLink className="nav-link" to="articles">
+							مقالات
 						</NavLink>
-						<NavLink className="nav-link" to="services">
-							Services
+						<NavLink className="nav-link" to="evenements">
+							مناسبات
 						</NavLink>
-						<NavLink className="nav-link" to="/ar">
-							Ar
+						<NavLink className="nav-link" to="/fr">
+							Fr
 						</NavLink>
 					</div>
 				</div>

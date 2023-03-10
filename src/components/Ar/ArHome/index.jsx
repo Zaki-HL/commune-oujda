@@ -5,7 +5,7 @@ import ArLanding from './ArLanding';
 const ArHome = () => {
 	return (
 		<>
-			<FrLanding />
+			<ArLanding />
 		</>
 	);
 };

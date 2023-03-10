@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const FrNavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-md bg-body-tertiary">
 			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
+				<Link className="navbar-brand" to="/fr">
 					LOGO
-				</a>
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -30,11 +30,11 @@ const FrNavBar = () => {
 						<NavLink className="nav-link" to="ma-ville">
 							Ma Ville
 						</NavLink>
-						<NavLink className="nav-link" to="Arrondissements">
-							Arrondissements
+						<NavLink className="nav-link" to="articles">
+							Articles
 						</NavLink>
-						<NavLink className="nav-link" to="services">
-							Services
+						<NavLink className="nav-link" to="evenements">
+							Evenements
 						</NavLink>
 						<NavLink className="nav-link" to="/ar">
 							Ar
