@@ -1,7 +1,7 @@
-import './index.scss';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const ArNavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-md bg-body-tertiary">
 			<div className="container-fluid">
@@ -24,18 +24,21 @@ const NavBar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav ms-auto">
-						<a className="nav-link" href="#">
+						<NavLink className="nav-link" to="annonces">
 							Annonces
-						</a>
-						<a className="nav-link" href="#">
+						</NavLink>
+						<NavLink className="nav-link" to="ma-ville">
 							Ma Ville
-						</a>
-						<a className="nav-link" href="#">
+						</NavLink>
+						<NavLink className="nav-link" to="Arrondissements">
 							Arrondissements
-						</a>
-						<a className="nav-link" href="#">
+						</NavLink>
+						<NavLink className="nav-link" to="services">
 							Services
-						</a>
+						</NavLink>
+						<NavLink className="nav-link" to="/ar">
+							Ar
+						</NavLink>
 					</div>
 				</div>
 			</div>
@@ -43,4 +46,4 @@ const NavBar = () => {
 	);
 };
 
-export default NavBar;
+export default ArNavBar;

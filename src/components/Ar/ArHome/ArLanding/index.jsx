@@ -4,7 +4,7 @@ import myImage1 from '/imgs/img1.jpg';
 import myImage2 from '/imgs/img2.jpg';
 import myImage3 from '/imgs/img3.webp';
 
-const FrLanding = () => {
+const ArLanding = () => {
 	return (
 		<div className="landing">
 			<div
@@ -52,4 +52,4 @@ const FrLanding = () => {
 	);
 };
 
-export default FrLanding;
+export default ArLanding;

@@ -1,8 +1,8 @@
 import './index.scss';
 import React from 'react';
-import FrLanding from './FrLanding';
+import ArLanding from './ArLanding';
 
-const FrHome = () => {
+const ArHome = () => {
 	return (
 		<>
 			<FrLanding />
@@ -10,4 +10,4 @@ const FrHome = () => {
 	);
 };
 
-export default FrHome;
+export default ArHome;
