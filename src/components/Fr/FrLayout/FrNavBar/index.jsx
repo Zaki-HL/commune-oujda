@@ -1,9 +1,11 @@
+import './index.scss';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const FrNavBar = () => {
 	return (
-		<nav className="navbar navbar-expand-md bg-body-tertiary">
+		<div style={{backgroundColor : 'red'}}>
+		<nav  className="navbar navbar-expand-md bg-body-tertiary">
 			<div className="container-fluid">
 				<Link className="navbar-brand" to="/fr">
 					LOGO
@@ -42,7 +44,7 @@ const FrNavBar = () => {
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav></div>
 	);
 };
 
