@@ -3,6 +3,8 @@ import React from 'react';
 import myImage1 from '/imgs/img1.jpg';
 import myImage2 from '/imgs/img2.jpg';
 import myImage3 from '/imgs/img3.webp';
+import myImage4 from '/imgs/1.jpg';
+
 
 const FrLanding = () => {
 	return (
@@ -14,13 +16,16 @@ const FrLanding = () => {
 			>
 				<div className="carousel-inner">
 					<div className="carousel-item active" data-bs-interval="5000">
-						<img src={myImage1} className="d-block w-100" alt="..." />
+						<img src={myImage4} className="d-block w-100" alt="..." />
 					</div>
 					<div className="carousel-item" data-bs-interval="5000">
 						<img src={myImage2} className="d-block w-100" alt="..." />
 					</div>
 					<div className="carousel-item" data-bs-interval="5000">
 						<img src={myImage3} className="d-block w-100" alt="..." />
+					</div>
+					<div className="carousel-item" data-bs-interval="5000">
+						<img src={myImage1} className="d-block w-100" alt="..." />
 					</div>
 				</div>
 				<button
