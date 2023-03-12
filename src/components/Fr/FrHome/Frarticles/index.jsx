@@ -4,7 +4,7 @@ import aziz from '/imgs/aziz.jpg';
 import myImage1 from '/imgs/1.jpg';
 import article2 from '/imgs/article2.png';
 import evenement1 from '/imgs/evenement1.jpeg';
-import services from '/imgs/services.jpg';
+import services from '/imgs/services1.jpeg';
 import chiffres from '/imgs/chiffres.jpg';
 
 const Articles = () => {
@@ -134,7 +134,9 @@ const Articles = () => {
 								</h4>
 							</div>
 						</div>
-						<button className="btn bg-secondary mx-auto p-2 text-light btn_1">Voir plus</button>
+						<button className="btn bg-secondary mx-auto p-2 text-light btn_1">
+							Voir plus
+						</button>
 					</div>
 					{/*end annonces*/}
 				</div>
@@ -145,18 +147,45 @@ const Articles = () => {
 							<div className="card text-bg-dark">
 								<img src={services} className="card-img" alt="..." />
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
-									<button className='btn bg-secondary'>Services</button>
+									<button className="btn bg-secondary text-light">Services</button>
 								</div>
 							</div>
 						</div>
 						{/*end services*/}
 						{/*start chiffres*/}
 						<div className="col-12 mt-3">
-							<img
-								className="img-fluid"
-								src={chiffres}
-								alt="image chiffres-clés"
-							/>
+							<div className="card text-bg-dark">
+								<img
+									src={chiffres}
+									className="card-img h-100 custom-filter "
+									alt="..."
+								/>
+								<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
+									<h3 className="card-title">
+										<span>CHIFFRES-CLÉS</span>
+										<div class="d-flex">
+											<div class="tmin p-2 flex-fill bg-light text-dark">
+												+720k habitants
+											</div>
+											<div class="tmin p-2 flex-fill bg-warning mx-2">
+												30% text
+											</div>
+											<div class="tmin p-2 flex-fill bg-danger mx-2">
+												color red
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="tmin p-2 flex-grow-1 bg-primary mt-2">
+												350k voiture
+											</div>
+											<div class="tmin p-2 bg-secondary mt-2 mx-2">
+												navbar
+											</div>
+											<div class="tmin p-2 bg-info mt-2">color info</div>
+										</div>
+									</h3>
+								</div>
+							</div>
 						</div>
 						{/*end chiffres*/}
 					</div>
