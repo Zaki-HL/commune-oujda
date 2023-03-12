@@ -1,10 +1,8 @@
 import './index.scss';
 import React from 'react';
 import myImage1 from '/imgs/img1.jpg';
-import myImage2 from '/imgs/img2.jpg';
 import myImage3 from '/imgs/img3.webp';
 import myImage4 from '/imgs/1.jpg';
-
 
 const FrLanding = () => {
 	return (
@@ -15,17 +13,23 @@ const FrLanding = () => {
 				data-bs-ride="carousel"
 			>
 				<div className="carousel-inner">
-					<div className="carousel-item active" data-bs-interval="5000">
-						<img src={myImage4} className="d-block w-100" alt="..." />
-					</div>
-					<div className="carousel-item" data-bs-interval="5000">
-						<img src={myImage2} className="d-block w-100" alt="..." />
-					</div>
-					<div className="carousel-item" data-bs-interval="5000">
+					<div
+						className="carousel-item active card text-bg-dark"
+						data-bs-interval="5000"
+					>
 						<img src={myImage3} className="d-block w-100" alt="..." />
+						<div className="card-img-overlay d-flex flex-column justify-content-center fw-bold">
+							<h5 className="card-title">Commune Oujda</h5>
+						</div>
 					</div>
-					<div className="carousel-item" data-bs-interval="5000">
+					<div
+						className="carousel-item card text-bg-dark"
+						data-bs-interval="5000"
+					>
 						<img src={myImage1} className="d-block w-100" alt="..." />
+						<div className="card-img-overlay d-flex flex-column justify-content-center fw-bold">
+							<h5 className="card-title">Commune Oujda</h5>
+						</div>
 					</div>
 				</div>
 				<button

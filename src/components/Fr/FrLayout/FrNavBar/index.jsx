@@ -4,9 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const FrNavBar = () => {
 	return (
-		<div style={{backgroundColor : 'red'}}>
-		<nav  className="navbar navbar-expand-md bg-body-tertiary">
-			<div className="container-fluid">
+		<nav className="navbar navbar-expand-md bg-secondary">
+			<div className="container-fluid mx-1 fw-bold">
 				<Link className="navbar-brand" to="/fr">
 					LOGO
 				</Link>
@@ -26,25 +25,25 @@ const FrNavBar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav ms-auto">
-						<NavLink className="nav-link" to="annonces">
+						<NavLink className="nav-link text-light" to="annonces">
 							Annonces
 						</NavLink>
-						<NavLink className="nav-link" to="ma-ville">
+						<NavLink className="nav-link text-light" to="ma-ville">
 							Ma Ville
 						</NavLink>
-						<NavLink className="nav-link" to="articles">
+						<NavLink className="nav-link text-light" to="articles">
 							Articles
 						</NavLink>
-						<NavLink className="nav-link" to="evenements">
+						<NavLink className="nav-link text-light" to="evenements">
 							Evenements
 						</NavLink>
-						<NavLink className="nav-link" to="/ar">
+						<NavLink className="nav-link text-light" to="/ar">
 							Ar
 						</NavLink>
 					</div>
 				</div>
 			</div>
-		</nav></div>
+		</nav>
 	);
 };
 
