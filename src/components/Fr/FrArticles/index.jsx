@@ -8,6 +8,7 @@ import imgImage3 from '/imgs/image3.jpeg';
 import imgImage4 from '/imgs/image4.jpeg';
 import imgHajj from '/imgs/hajj.jpeg';
 import imgUneimage from '/imgs/uneimage.jpeg';
+import { Link } from 'react-router-dom';
 
 const FrArticles = () => {
 	return (
@@ -20,20 +21,22 @@ const FrArticles = () => {
 			<div className="card-deck row mt-5 align-items-center">
 				{/* Start Article 1 */}
 				<div className="col-sm-12 col-md-6 col-lg-3 my-3">
-					<div className="card bg-dark text-white">
-						<img
-							className="card-img custom-filter"
-							src={imgArticle2}
-							alt="Card image"
-							style={{ height: '200px' }}
-						/>
-						<div className="card-img-overlay d-flex flex-column justify-content-end">
-							<h4 className="card-title text-start fs-6">
-								Le Maroc a la biennale DefExpo en Inde - Médias24
-							</h4>
-							<p className="card-text">14 Mars 2023</p>
+					<Link to="1">
+						<div className="card bg-dark text-white">
+							<img
+								className="card-img custom-filter"
+								src={imgArticle2}
+								alt="Card image"
+								style={{ height: '200px' }}
+							/>
+							<div className="card-img-overlay d-flex flex-column justify-content-end">
+								<h4 className="card-title text-start fs-6">
+									Le Maroc a la biennale DefExpo en Inde - Médias24
+								</h4>
+								<p className="card-text">14 Mars 2023</p>
+							</div>
 						</div>
-					</div>
+					</Link>
 				</div>
 				{/* End Article 1 */}
 
