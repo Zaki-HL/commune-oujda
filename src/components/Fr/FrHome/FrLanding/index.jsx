@@ -14,7 +14,7 @@ const FrLanding = () => {
 			>
 				<div className="carousel-inner">
 					<div
-						className="carousel-item active card text-bg-dark"
+						className="carousel-item active br-0 card text-bg-dark"
 						data-bs-interval="5000"
 					>
 						<img src={myImage3} className="d-block w-100" alt="..." />
@@ -23,7 +23,7 @@ const FrLanding = () => {
 						</div>
 					</div>
 					<div
-						className="carousel-item card text-bg-dark"
+						className="carousel-item br-0 card text-bg-dark"
 						data-bs-interval="5000"
 					>
 						<img src={myImage1} className="d-block w-100" alt="..." />

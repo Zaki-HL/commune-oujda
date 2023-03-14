@@ -28,14 +28,14 @@ const FrNavBar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav ms-auto">
+						<NavLink className="nav-link text-light" to="articles">
+							Articles
+						</NavLink>
 						<NavLink className="nav-link text-light" to="annonces">
 							Annonces
 						</NavLink>
 						<NavLink className="nav-link text-light" to="ma-ville">
 							Ma Ville
-						</NavLink>
-						<NavLink className="nav-link text-light" to="articles">
-							Articles
 						</NavLink>
 						<NavLink className="nav-link text-light" to="evenements">
 							Evenements
