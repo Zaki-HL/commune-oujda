@@ -4,7 +4,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 const FrNavBar = () => {
 	return (
-		<nav className="navbar navbar-expand-md bg-secondary">
+		<nav
+			className="navbar navbar-expand-md "
+			style={{ backgroundColor: 'rgba(53,59,65)' }}
+		>
 			<div className="container-fluid mx-1 fw-bold">
 				<Link className="navbar-brand" to="/fr">
 					LOGO
