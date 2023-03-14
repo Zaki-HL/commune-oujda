@@ -31,7 +31,7 @@ const Articles = () => {
 						/>
 						<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
 							<small>14 Mars 2023</small>
-							<h3 className="card-title">
+							<h3 className="card-title text-start">
 								Le Maroc a la biennale DefExpo en Inde - Médias24
 							</h3>
 						</div>
@@ -44,7 +44,7 @@ const Articles = () => {
 				<img src={imgEvenement1} className="card-img custom-filter" alt="..." />
 				<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
 					<small>13 Mars 2023</small>
-					<h3 className="card-title fs-4">
+					<h3 className="card-title fs-4 text-start">
 						Oujda-Angad : Approbation d'une série de projets INDH à fort impact
 						socio-économique
 					</h3>
@@ -132,7 +132,7 @@ const Articles = () => {
 										</div>
 									</div>
 									<div className="d-flex align-items-center justify-content-center">
-										<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center text-center">
+										<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
 											350k voiture
 										</div>
 										<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">

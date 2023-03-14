@@ -3,16 +3,14 @@ import React from 'react';
 import FrLanding from './FrLanding';
 import Card from './Frarticles';
 
-
-
 const FrHome = () => {
 	return (
 		<>
 			<FrLanding />
 
-      		<Card />
-			</>
-  );
-}
+			<Card />
+		</>
+	);
+};
 
 export default FrHome;
