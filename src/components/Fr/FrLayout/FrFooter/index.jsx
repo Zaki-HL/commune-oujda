@@ -16,6 +16,7 @@ import { Link } from 'react-router-dom';
 
 const FrFooter = () => {
 	return (
+
 		<>
 			<MDBFooter
 				className="text-center"
@@ -190,6 +191,7 @@ const FrFooter = () => {
 				</div>
 			</MDBFooter>
 		</>
+
 	);
 };
 
