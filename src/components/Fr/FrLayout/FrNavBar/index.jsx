@@ -1,16 +1,16 @@
 import './index.scss';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import logo from '/imgs/logo.jpg';
 const FrNavBar = () => {
 	return (
 		<nav
 			className="navbar navbar-expand-md "
-			style={{ backgroundColor: 'rgba(53,59,65)' }}
+			style={{ backgroundColor: 'white' }}
 		>
 			<div className="container-fluid mx-1 fw-bold">
 				<Link className="navbar-brand" to="/fr">
-					LOGO
+					<img src={logo} alt="..." className="img_l" />
 				</Link>
 				<button
 					className="navbar-toggler"
@@ -28,19 +28,19 @@ const FrNavBar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav ms-auto">
-						<NavLink className="nav-link text-light" to="annonces">
+						<NavLink className="nav-link text-dark" to="annonces">
 							Annonces
 						</NavLink>
-						<NavLink className="nav-link text-light" to="ma-ville">
+						<NavLink className="nav-link text-dark" to="ma-ville">
 							Ma Ville
 						</NavLink>
-						<NavLink className="nav-link text-light" to="articles">
+						<NavLink className="nav-link text-dark" to="articles">
 							Articles
 						</NavLink>
-						<NavLink className="nav-link text-light" to="evenements">
+						<NavLink className="nav-link text-dark" to="evenements">
 							Evenements
 						</NavLink>
-						<NavLink className="nav-link text-light" to="/ar">
+						<NavLink className="nav-link text-dark" to="/ar">
 							Ar
 						</NavLink>
 					</div>
