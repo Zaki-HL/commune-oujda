@@ -148,6 +148,8 @@ const Articles = () => {
 						{/*end chiffres*/}
 					</div>
 				</div>
+				{/*start map */}
+				
 			</div>
 		</div>
 	);
