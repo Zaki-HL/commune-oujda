@@ -1,6 +1,6 @@
 import './index.scss';
 import React from 'react';
-import aziz from '/imgs/aziz.jpg';
+import presidentImg from '/imgs/president.jpg';
 import imgArticle2 from '/imgs/article2.png';
 import imgEvenement1 from '/imgs/evenement1.jpeg';
 import imgServices from '/imgs/services1.jpeg';
@@ -14,9 +14,13 @@ const Articles = () => {
 				<div className="col-md-5">
 					{/* Start President */}
 					<div className="card text-bg-dark">
-						<img src={aziz} className="card-img custom-filter" alt="..." />
+						<img
+							src={presidentImg}
+							className="card-img custom-filter"
+							alt="..."
+						/>
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="card-title  p-2 p-md-1">President nom</h5>
+							<h5 className="card-title  p-2 p-md-1">El AZZAOUI Mohammeed</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -149,7 +153,6 @@ const Articles = () => {
 					</div>
 				</div>
 				{/*start map */}
-				
 			</div>
 		</div>
 	);
