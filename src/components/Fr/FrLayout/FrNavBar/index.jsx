@@ -34,6 +34,7 @@ const FrNavBar = () => {
 						<NavLink className="nav-link text-dark" to="ma-ville">
 							Ma Ville
 						</NavLink>
+
 						<NavLink className="nav-link text-dark" to="articles">
 							Articles
 						</NavLink>

@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 
 const FrFooter = () => {
 	return (
-		<>
+		<footer className="mt-5">
 			<MDBFooter
 				className="text-center"
 				color="white"
@@ -189,7 +189,7 @@ const FrFooter = () => {
 					Commune Oujda
 				</div>
 			</MDBFooter>
-		</>
+		</footer>
 	);
 };
 

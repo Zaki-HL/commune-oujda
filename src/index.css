@@ -1,3 +1,7 @@
 .rtl {
 	direction: rtl !important;
 }
+
+.br-0 {
+	border-radius: 0 !important;
+}
