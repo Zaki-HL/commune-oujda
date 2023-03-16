@@ -48,8 +48,8 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src={coteOuest} class="d-block w-100" />
-						<div class="carousel-caption">
+						<img src={coteOuest} className="d-block w-100" />
+						<div className="carousel-caption">
 							<h5>Parc Lalla Meryem</h5>
 						</div>
 					</div>

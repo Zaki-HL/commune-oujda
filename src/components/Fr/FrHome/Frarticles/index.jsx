@@ -1,8 +1,9 @@
 import './index.scss';
 import React from 'react';
-import presidentImg from '/imgs/president.jpg';
+import Azzaoui from '/imgs/Azzaoui.jpg';
+import myImage1 from '/imgs/1.jpg';
 import imgArticle2 from '/imgs/article2.png';
-import imgEvenement1 from '/imgs/evenement1.jpeg';
+import evenement2 from '/imgs/evenement2.jpg';
 import imgServices from '/imgs/services1.jpeg';
 import imgChiffres from '/imgs/chiffres.jpg';
 
@@ -14,13 +15,11 @@ const Articles = () => {
 				<div className="col-md-5">
 					{/* Start President */}
 					<div className="card text-bg-dark">
-						<img
-							src={presidentImg}
-							className="card-img custom-filter"
-							alt="..."
-						/>
+						<img src={Azzaoui} className="card-img" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="card-title  p-2 p-md-1">El AZZAOUI Mohammeed</h5>
+							<h5 className="presi card-title  p-2 p-md-1">
+								Mohamed El Azzaoui
+							</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -45,7 +44,7 @@ const Articles = () => {
 			</div>
 			{/* Ligne 2 */}
 			<div className="card text-bg-dark mt-3 mt-md-4">
-				<img src={imgEvenement1} className="card-img custom-filter" alt="..." />
+				<img src={evenement2} className="card-img custom-filter" alt="..." />
 				<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
 					<small>13 Mars 2023</small>
 					<h3 className="card-title fs-4 text-start">
@@ -123,37 +122,49 @@ const Articles = () => {
 								<div className="card-img-overlay d-flex flex-column justify-content-center fw-bold">
 									<h3 className="card-title">
 										<span>CHIFFRES-CLÉS</span>
-									</h3>
-									<div className="d-flex align-items-center justify-content-center">
-										<div className="tmin p-3 py-4 flex-fill bg-light text-dark d-flex align-items-center text-center">
-											+720k habitants
+										<div className="d-flex">
+											<div className="tmin p-2 flex-fill bg-light text-dark">
+												+720k habitants
+											</div>
+											<div className="tmin p-2 flex-fill bg-warning mx-2">
+												30% text
+											</div>
+											<div className="tmin p-2 flex-fill bg-danger mx-2">
+												color red
+											</div>
 										</div>
-										<div className="tmin p-3 py-4 flex-fill bg-warning mx-2 d-flex align-items-center text-center">
-											30% text
+										<div className="d-flex">
+											<div className="tmin p-2 flex-grow-1 bg-primary mt-2">
+												350k voiture
+											</div>
+											<div className="tmin p-2 bg-secondary mt-2 mx-2">
+												navbar
+											</div>
+											<div className="tmin p-2 bg-info mt-2">color info</div>
 										</div>
 										<div className="tmin p-3 py-4 flex-fill bg-danger mx-2 d-flex align-items-center text-center">
 											color red
 										</div>
+									</h3>
+								</div>
+								<div className="d-flex align-items-center justify-content-center">
+									<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
+										350k voiture
 									</div>
-									<div className="d-flex align-items-center justify-content-center">
-										<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
-											350k voiture
-										</div>
-										<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">
-											navbar
-										</div>
-										<div className="tmin p-3 py-4 bg-info mt-2 d-flex align-items-center text-center">
-											color info
-										</div>
+									<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">
+										navbar
+									</div>
+									<div className="tmin p-3 py-4 bg-info mt-2 d-flex align-items-center text-center">
+										color info
 									</div>
 								</div>
 							</div>
 						</div>
-						{/*end chiffres*/}
 					</div>
+					{/*end chiffres*/}
 				</div>
-				{/*start map */}
 			</div>
+			{/*map*/}
 		</div>
 	);
 };
