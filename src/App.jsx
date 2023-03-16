@@ -11,6 +11,7 @@ import ArLayout from './components/Ar/ArLayout';
 import ArAnnonces from './components/Ar/ArAnnonces';
 import ArMaVille from './components/Ar/ArMaVille';
 import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
+import FrEvenementDetail from './components/Fr/FrEvenements/FrEvenementDetail';
 
 const App = () => {
 	return (
@@ -25,6 +26,7 @@ const App = () => {
 					<Route path="articles" element={<FrArticles />} />
 					<Route path="articles/:id" element={<FrArticleDetail />} />
 					<Route path="evenements" element={<FrEvenements />} />
+					<Route path="evenements/:id" element={<FrEvenementDetail />} />
 				</Route>
 
 				<Route path="/ar" element={<ArLayout />}>
