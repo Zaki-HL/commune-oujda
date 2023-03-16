@@ -22,7 +22,6 @@ const App = () => {
 				<Route path="/fr" element={<FrLayout />}>
 					<Route index element={<FrHome />} />
 					<Route path="annonces" element={<FrAnnonces />} />
-					<Route path="annonces/:id" element={<FrAnnoncesDetail />} />
 					<Route path="ma-ville" element={<FrMaVille />} />
 					<Route path="articles" element={<FrArticles />} />
 					<Route path="articles/:id" element={<FrArticleDetail />} />

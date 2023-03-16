@@ -5,7 +5,7 @@ const FrAnnonces = () => {
 		<div className='container'>
 			<div className='row'>
 				<div className='col-md-12'>
-					<div class="card mt-3 mb-3">
+					<div class="card mt-5 mb-5">
 						<div class="card-body p-0">
 							<div class="derniersAvis">
 								<table class="table table-sm table-striped rounded">
@@ -16,7 +16,6 @@ const FrAnnonces = () => {
 										</tr>
 									</thead>
 									<tbody>
-										<Link to="1">
 											<tr class="odd">
 												<td class="dateAvis">
 													<div className="annonces text-center">
@@ -32,7 +31,6 @@ const FrAnnonces = () => {
 													</p>
 												</td>
 											</tr>
-										</Link>
 										<tr>
 											<td class="dateAvis">
 												<div className="annonces text-center">
