@@ -2,11 +2,10 @@ import './index.scss';
 import React from 'react';
 import Azzaoui from '/imgs/Azzaoui.jpg';
 import myImage1 from '/imgs/1.jpg';
-import article2 from '/imgs/article2.png';
+import imgArticle2 from '/imgs/article2.png';
 import evenement2 from '/imgs/evenement2.jpg';
-import services from '/imgs/services1.jpeg';
-import chiffres from '/imgs/chiffres.jpg';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import imgServices from '/imgs/services1.jpeg';
+import imgChiffres from '/imgs/chiffres.jpg';
 
 const Articles = () => {
 	return (
@@ -135,7 +134,7 @@ const Articles = () => {
 											</div>
 										</div>
 										<div className="d-flex">
-											<div class="tmin p-2 flex-grow-1 bg-primary mt-2">
+											<div className="tmin p-2 flex-grow-1 bg-primary mt-2">
 												350k voiture
 											</div>
 											<div className="tmin p-2 bg-secondary mt-2 mx-2">
@@ -146,26 +145,26 @@ const Articles = () => {
 										<div className="tmin p-3 py-4 flex-fill bg-danger mx-2 d-flex align-items-center text-center">
 											color red
 										</div>
+									</h3>
+								</div>
+								<div className="d-flex align-items-center justify-content-center">
+									<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
+										350k voiture
 									</div>
-									<div className="d-flex align-items-center justify-content-center">
-										<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
-											350k voiture
-										</div>
-										<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">
-											navbar
-										</div>
-										<div className="tmin p-3 py-4 bg-info mt-2 d-flex align-items-center text-center">
-											color info
-										</div>
+									<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">
+										navbar
+									</div>
+									<div className="tmin p-3 py-4 bg-info mt-2 d-flex align-items-center text-center">
+										color info
 									</div>
 								</div>
 							</div>
 						</div>
-						{/*end chiffres*/}
 					</div>
+					{/*end chiffres*/}
 				</div>
-				{/*map*/}
 			</div>
+			{/*map*/}
 		</div>
 	);
 };
