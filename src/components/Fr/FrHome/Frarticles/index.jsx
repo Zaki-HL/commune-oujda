@@ -1,11 +1,12 @@
 import './index.scss';
 import React from 'react';
-import aziz from '/imgs/aziz.jpg';
+import Azzaoui from '/imgs/Azzaoui.jpg';
 import myImage1 from '/imgs/1.jpg';
 import article2 from '/imgs/article2.png';
-import evenement1 from '/imgs/evenement1.jpeg';
+import evenement2 from '/imgs/evenement2.jpg';
 import services from '/imgs/services1.jpeg';
 import chiffres from '/imgs/chiffres.jpg';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Articles = () => {
 	return (
@@ -15,9 +16,11 @@ const Articles = () => {
 				<div className="col-md-5">
 					{/* Start President */}
 					<div className="card text-bg-dark">
-						<img src={aziz} className="card-img" alt="..." />
+						<img src={Azzaoui} className="card-img" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="presi card-title  p-2 p-md-1">President maroc</h5>
+							<h5 className="presi card-title  p-2 p-md-1">
+								Mohamed El Azzaoui
+							</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -42,7 +45,7 @@ const Articles = () => {
 			</div>
 			{/* Ligne 2 */}
 			<div className="card text-bg-dark mt-3 mt-md-4">
-				<img src={evenement1} className="card-img custom-filter" alt="..." />
+				<img src={evenement2} className="card-img custom-filter" alt="..." />
 				<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
 					<small>13 Mars 2023</small>
 					<h3 className="card-title fs-4">
@@ -147,7 +150,9 @@ const Articles = () => {
 							<div className="card text-bg-dark">
 								<img src={services} className="card-img" alt="..." />
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
-									<button className="btn bg-secondary text-light">Services</button>
+									<button className="btn bg-secondary text-light">
+										Services
+									</button>
 								</div>
 							</div>
 						</div>
@@ -163,25 +168,25 @@ const Articles = () => {
 								<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
 									<h3 className="card-title">
 										<span>CHIFFRES-CLÉS</span>
-										<div class="d-flex">
-											<div class="tmin p-2 flex-fill bg-light text-dark">
+										<div className="d-flex">
+											<div className="tmin p-2 flex-fill bg-light text-dark">
 												+720k habitants
 											</div>
-											<div class="tmin p-2 flex-fill bg-warning mx-2">
+											<div className="tmin p-2 flex-fill bg-warning mx-2">
 												30% text
 											</div>
-											<div class="tmin p-2 flex-fill bg-danger mx-2">
+											<div className="tmin p-2 flex-fill bg-danger mx-2">
 												color red
 											</div>
 										</div>
-										<div class="d-flex">
+										<div className="d-flex">
 											<div class="tmin p-2 flex-grow-1 bg-primary mt-2">
 												350k voiture
 											</div>
-											<div class="tmin p-2 bg-secondary mt-2 mx-2">
+											<div className="tmin p-2 bg-secondary mt-2 mx-2">
 												navbar
 											</div>
-											<div class="tmin p-2 bg-info mt-2">color info</div>
+											<div className="tmin p-2 bg-info mt-2">color info</div>
 										</div>
 									</h3>
 								</div>
@@ -190,8 +195,7 @@ const Articles = () => {
 						{/*end chiffres*/}
 					</div>
 				</div>
-				{/*start map */}
-				
+				{/*map*/}
 			</div>
 		</div>
 	);
