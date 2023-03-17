@@ -64,33 +64,6 @@ const FrFooter = () => {
 						</MDBBtn>
 					</section>
 
-					<section className="">
-						<form action="">
-							<MDBRow className="d-flex justify-content-center">
-								<MDBCol size="auto">
-									<p className="pt-2">
-										<strong>Entrer votre E-mail</strong>
-									</p>
-								</MDBCol>
-
-								<MDBCol md="5" start>
-									<MDBInput
-										contrast
-										type="email"
-										label="Email address"
-										className="mb-4"
-									/>
-								</MDBCol>
-
-								<MDBCol size="auto">
-									<MDBBtn outline color="light" type="submit" className="mb-4">
-										M'inscrire
-									</MDBBtn>
-								</MDBCol>
-							</MDBRow>
-						</form>
-					</section>
-
 					<section className="mb-4">
 						<p>OUJDA site officiel de la Commune</p>
 					</section>
