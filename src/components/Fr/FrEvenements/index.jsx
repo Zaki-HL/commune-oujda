@@ -17,7 +17,7 @@ const FrEvenements = () => {
 
 				{/* Start line 1 */}
 				<div className="card-deck row mt-5 align-items-center">
-					{/* Start Article 1 */}
+					{/* Start Evenement 1 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<Link to="1">
 							<div className="card bg-dark text-white">
@@ -37,9 +37,9 @@ const FrEvenements = () => {
 							</div>
 						</Link>
 					</div>
-					{/* End Article 1 */}
+					{/* End Evenement 1 */}
 
-					{/* Start Article 2 */}
+					{/* Start Evenement 2 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<div className="card bg-dark text-white">
 							<img
@@ -56,10 +56,11 @@ const FrEvenements = () => {
 								<p className="card-text">26 Mars 2023</p>
 							</div>
 						</div>
+						
 					</div>
-					{/* End Article 2 */}
+					{/* End Evenement 2 */}
 
-					{/* Start Article 3 */}
+					{/* Start Evenement 3 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<div className="card bg-dark text-white">
 							<img
@@ -76,9 +77,9 @@ const FrEvenements = () => {
 							</div>
 						</div>
 					</div>
-					{/* End Article 3 */}
+					{/* End Evenement 3 */}
 
-					{/* Start Article 4 */}
+					{/* Start Evenement 4 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<div className="card bg-dark text-white">
 							<img
@@ -97,8 +98,8 @@ const FrEvenements = () => {
 							</div>
 						</div>
 					</div>
-					{/* End Article 4 */}
-					{/* Start Article 5 */}
+					{/* End Evenement 4 */}
+					{/* Start Evenement 5 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<div className="card bg-dark text-white">
 							<img
@@ -115,9 +116,9 @@ const FrEvenements = () => {
 							</div>
 						</div>
 					</div>
-					{/* End Article 5 */}
+					{/* End Evenement 5 */}
 
-					{/* Start Article 6 */}
+					{/* Start Evenement 6 */}
 					<div className="col-sm-12 col-md-6 col-lg-3 my-3">
 						<div className="card bg-dark text-white">
 							<img
@@ -134,7 +135,7 @@ const FrEvenements = () => {
 							</div>
 						</div>
 					</div>
-					{/* End Article 6 */}
+					{/* End Evenement 6 */}
 				</div>
 				{/* End line 1 */}
 			</div>
