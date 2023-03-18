@@ -1,5 +1,6 @@
 import './index.scss';
 import React from 'react';
+
 import Azzaoui from '/imgs/Azzaoui.jpg';
 import imgArticle2 from '/imgs/article2.png';
 
@@ -24,7 +25,7 @@ const Articles = () => {
 					<div className="card text-bg-dark">
 						<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="card-title  p-2 p-md-1">Mohamed El Azzaoui</h5>
+							<h5 className="card-title  p-2 p-md-1 nom_president">Mohamed El Azzaoui</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -50,84 +51,56 @@ const Articles = () => {
 			</div>
 			<h4 className="evenements text-center mt-5">Evénements</h4>
 			{/* Ligne 2 evenement*/}
-			<div id="carouselExampleCaptions" className="carousel slide">
-				<div className="carousel-indicators">
-					<button
-						type="button"
-						data-bs-target="#carouselExampleCaptions"
-						data-bs-slide-to="0"
-						className="active"
-						aria-current="true"
-						aria-label="Slide 1"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#carouselExampleCaptions"
-						data-bs-slide-to="1"
-						aria-label="Slide 2"
-					></button>
-					<button
-						type="button"
-						data-bs-target="#carouselExampleCaptions"
-						data-bs-slide-to="2"
-						aria-label="Slide 3"
-					></button>
-				</div>
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<img src={even4} className="d-block w-100" alt="..." />
-						<div className="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>
-								Some representative placeholder content for the first slide.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src={even2} className="d-block w-100" alt="..." />
-						<div className="carousel-caption d-none d-md-block">
-							<h5>Second slide label</h5>
-							<p>
-								Some representative placeholder content for the second slide.
-							</p>
-						</div>
-					</div>
-					<div className="carousel-item">
-						<img src={even3} className="d-block w-100" alt="..." />
-						<div className="carousel-caption d-none d-md-block">
-							<h5>Third slide label</h5>
-							<p>
-								Some representative placeholder content for the third slide.
-							</p>
-						</div>
+			<div className="card-group">
+				<div className="card">
+					<img src={even4} className="card-img-top" alt="..." />
+					<div className="card-body">
+						<h5 className="card-title">Cisco LIVE</h5>
+						<p className="card-text">
+							This is a wider card with supporting text below as a natural
+							lead-in to additional content. This content is a little bit
+							longer.
+						</p>
+						<p className="card-text">
+							<small class="text-muted">19 Mars 2023</small>
+						</p>
 					</div>
 				</div>
-				<button
-					className="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleCaptions"
-					data-bs-slide="prev"
-				>
-					<span
-						className="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span>
-					<span className="visually-hidden">Previous</span>
-				</button>
-				<button
-					className="carousel-control-next"
-					type="button"
-					data-bs-target="#carouselExampleCaptions"
-					data-bs-slide="next"
-				>
-					<span
-						className="carousel-control-next-icon"
-						aria-hidden="true"
-					></span>
-					<span className="visually-hidden">Next</span>
+				<div className="card">
+					<img src={even2} className="card-img-top" alt="..." />
+					<div className="card-body">
+						<h5 className="card-title">ERP</h5>
+						<p className="card-text">
+							This card has supporting text below as a natural lead-in to
+							additional content.
+						</p>
+						<p className="card-text">
+							<small className="text-muted">21 Mars 2023</small>
+						</p>
+					</div>
+				</div>
+				<div className="card">
+					<img src={even3} className="card-img-top" alt="..." />
+					<div className="card-body">
+						<h5 className="card-title">DOMO PALOOZA</h5>
+						<p className="card-text">
+							This is a wider card with supporting text below as a natural
+							lead-in to additional content. This card has even longer content
+							than the first to show that equal height action.
+						</p>
+						<p className="card-text">
+							<small className="text-muted">26 Mars 2023</small>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center align-items-center mt-2">
+				<button type="button" className="btn btn-outline-secondary btn-sm">
+					<a href="#" className="text-dark">
+						voir plus
+					</a>
 				</button>
 			</div>
-
 			{/* Ligne 3*/}
 
 			<div className="row mt-5 align-items-center">
@@ -184,7 +157,7 @@ const Articles = () => {
 								<img src={service} className="card-img" alt="..." />
 
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
-									<button className="btn bg-secondary text-light">
+									<button type="button" class="btn btn-secondary btn-sm">
 										voir plus
 									</button>
 								</div>
