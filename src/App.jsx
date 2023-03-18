@@ -12,6 +12,7 @@ import ArAnnonces from './components/Ar/ArAnnonces';
 import ArMaVille from './components/Ar/ArMaVille';
 import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
 import FrEvenementDetail from './components/Fr/FrEvenements/FrEvenementDetail';
+import FrAnnonceDetail from './components/Fr/FrAnnonces/FrAnnonceDetail';
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 				<Route path="/fr" element={<FrLayout />}>
 					<Route index element={<FrHome />} />
 					<Route path="annonces" element={<FrAnnonces />} />
+					<Route path="annonces/:id" element={<FrAnnonceDetail />} />
 					<Route path="ma-ville" element={<FrMaVille />} />
 					<Route path="articles" element={<FrArticles />} />
 					<Route path="articles/:id" element={<FrArticleDetail />} />
