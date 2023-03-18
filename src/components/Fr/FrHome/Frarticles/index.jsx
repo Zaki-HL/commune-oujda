@@ -1,10 +1,8 @@
 import './index.scss';
 import React from 'react';
 import Azzaoui from '/imgs/Azzaoui.jpg';
-import myImage1 from '/imgs/1.jpg';
 import imgArticle2 from '/imgs/article2.png';
-import evenement2 from '/imgs/evenement2.jpg';
-import imgServices from '/imgs/services1.jpeg';
+
 import imgChiffres from '/imgs/chiffres.jpg';
 import even4 from '/imgs/even4.jpg';
 import even2 from '/imgs/even2.jpg';
@@ -22,6 +20,7 @@ const Articles = () => {
 			<div className="row mt-5 align-items-center">
 				<div className="col-md-5">
 					{/* Start President */}
+					<h4>Président</h4>
 					<div className="card text-bg-dark">
 						<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
@@ -32,6 +31,7 @@ const Articles = () => {
 				</div>
 				<div className="col-md-7 mt-3 mt-md-0 ">
 					{/* Start Article */}
+					<h4>Articles</h4>
 					<div className="card text-bg-dark">
 						<img
 							src={imgArticle2}
@@ -50,13 +50,13 @@ const Articles = () => {
 			</div>
 			<h4 className="evenements text-center mt-5">Evénements</h4>
 			{/* Ligne 2 evenement*/}
-			<div id="carouselExampleCaptions" className="carousel slide mt-3">
+			<div id="carouselExampleCaptions" className="carousel slide">
 				<div className="carousel-indicators">
 					<button
 						type="button"
 						data-bs-target="#carouselExampleCaptions"
 						data-bs-slide-to="0"
-						class="active"
+						className="active"
 						aria-current="true"
 						aria-label="Slide 1"
 					></button>
@@ -76,23 +76,29 @@ const Articles = () => {
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<img src={even4} className="d-block w-100" alt="..." />
-						<div className="carousel-caption">
-							<h5>shi is all in at CISCO LIVE</h5>
-							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
-						</div>
-					</div>
-					<div className="carousel-item">
-						<img src={even2} className="d-block w-100" alt="..." />
-						<div className="carousel-caption">
-							<h5>ERP</h5>
-							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542..</p>
+						<div className="carousel-caption d-none d-md-block">
+							<h5>First slide label</h5>
+							<p>
+								Some representative placeholder content for the first slide.
+							</p>
 						</div>
 					</div>
 					<div class="carousel-item">
+						<img src={even2} className="d-block w-100" alt="..." />
+						<div className="carousel-caption d-none d-md-block">
+							<h5>Second slide label</h5>
+							<p>
+								Some representative placeholder content for the second slide.
+							</p>
+						</div>
+					</div>
+					<div className="carousel-item">
 						<img src={even3} className="d-block w-100" alt="..." />
-						<div class="carousel-caption">
-							<h5>DOMO PALOOZA</h5>
-							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
+						<div className="carousel-caption d-none d-md-block">
+							<h5>Third slide label</h5>
+							<p>
+								Some representative placeholder content for the third slide.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -121,12 +127,7 @@ const Articles = () => {
 					<span className="visually-hidden">Next</span>
 				</button>
 			</div>
-			<button
-				type="button"
-				className="btn btn-outline-secondary btn-sm mt-2 d-block mx-auto"
-			>
-				voir plus
-			</button>
+
 			{/* Ligne 3*/}
 
 			<div className="row mt-5 align-items-center">
@@ -175,14 +176,16 @@ const Articles = () => {
 					{/*end annonces*/}
 				</div>
 				{/*start services*/}
+
 				<div className="col-md-7 mt-3 ms-auto">
 					<div className="row">
 						<div className="col-12">
 							<div className="card text-bg-dark">
 								<img src={service} className="card-img" alt="..." />
+
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
 									<button className="btn bg-secondary text-light">
-										Services
+										voir plus
 									</button>
 								</div>
 							</div>
