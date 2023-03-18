@@ -6,6 +6,14 @@ import imgArticle2 from '/imgs/article2.png';
 import evenement2 from '/imgs/evenement2.jpg';
 import imgServices from '/imgs/services1.jpeg';
 import imgChiffres from '/imgs/chiffres.jpg';
+import even4 from '/imgs/even4.jpg';
+import even2 from '/imgs/even2.jpg';
+import even3 from '/imgs/even3.jpg';
+import service from '/imgs/service.webp';
+//import ctm from '/imgs/ctm.png';
+//import oncf from '/imgs/oncf.png';
+//import onee from '/imgs/onee.png';
+//import redeeo from '/imgs/redeeo.png';
 
 const Articles = () => {
 	return (
@@ -42,59 +50,155 @@ const Articles = () => {
 					{/* End Article */}
 				</div>
 			</div>
-			{/* Ligne 2 */}
-			<div className="card text-bg-dark mt-3 mt-md-4">
-				<img src={evenement2} className="card-img custom-filter" alt="..." />
-				<div className="card-img-overlay d-flex flex-column justify-content-end fw-bold">
-					<small>13 Mars 2023</small>
-					<h3 className="card-title fs-4 text-start">
-						Oujda-Angad : Approbation d'une série de projets INDH à fort impact
-						socio-économique
-					</h3>
+			<h4 className="evenements" style={{ fontStyle: 'italic' }}>
+				Evénements
+			</h4>
+			{/* Ligne 2 evenement*/}
+			<div id="carouselExampleCaptions" className="carousel slide mt-3">
+				<div className="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
 				</div>
+				<div className="carousel-inner">
+					<div className="carousel-item active">
+						<img src={even4} className="d-block w-100" alt="..." />
+						<div className="carousel-caption d-none d-md-block">
+							<h5>shi is all in at CISCO LIVE</h5>
+							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
+						</div>
+					</div>
+					<div className="carousel-item">
+						<img src={even2} className="d-block w-100" alt="..." />
+						<div className="carousel-caption d-none d-md-block">
+							<h5>ERP</h5>
+							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542..</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src={even3} className="d-block w-100" alt="..." />
+						<div class="carousel-caption d-none d-md-block">
+							<h5>DOMO PALOOZA</h5>
+							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
+						</div>
+					</div>
+				</div>
+				<button
+					className="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev"
+				>
+					<span
+						className="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span className="visually-hidden">Previous</span>
+				</button>
+				<button
+					className="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next"
+				>
+					<span
+						className="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span className="visually-hidden">Next</span>
+				</button>
 			</div>
+			<button type="button" className="btn btn-outline-secondary btn-sm mt-1">
+				voir plus
+			</button>
 			{/* Ligne 3*/}
+
 			<div className="row mt-5 align-items-center">
 				<div className="col-md-4">
 					{/*start announces*/}
-					<div className="row">
-						<div className="col-4 col-md-12 d-md-flex m-md-1">
-							<div className="annonces bg-secondary text-center p-3 me-md-1">
-								<h1>17</h1>
-								<h4>Jan</h4>
-							</div>
-							<div className="lien bg-warning">
-								<a href="#">
-									Annonce de la liste des candidats aux entretiens...
-								</a>
-							</div>
+					<h4 className="announces" style={{ fontStyle: 'italic' }}>
+						Announces
+					</h4>
+					<div
+						className="card col-4 col-md-12 d-md-flex m-md-1"
+						style={{ width: '18rem' }}
+					>
+						<div className="card-body">
+							<h5
+								className="card-title"
+								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
+							>
+								16 Mars 2023
+							</h5>
+							<p className="card-text">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<a href="#" className="btn btn-outline-secondary">
+								Voir plus
+							</a>
 						</div>
-						<div className="col-4 col-md-12 d-md-flex m-md-1">
-							<div className="annonces bg-secondary text-center p-3 me-md-1">
-								<h1>17</h1>
-								<h4>Jan</h4>
-							</div>
-							<div className="lien bg-warning">
-								<a href="#">
-									Annonce de la liste des candidats aux entretiens...
-								</a>
-							</div>
-						</div>
-						<div className="col-4 col-md-12 d-md-flex m-md-1">
-							<div className="annonces bg-secondary text-center p-3 me-md-1">
-								<h1>19</h1>
-								<h4>Jan</h4>
-							</div>
-							<div className="lien bg-warning">
-								<a href="#">
-									Annonce de la liste des candidats aux entretiens...
-								</a>
-							</div>
-						</div>
-						<button className="btn bg-secondary mx-auto mt-3 p-2 text-light btn_1">
-							Voir plus
-						</button>
 					</div>
+
+					<div
+						className="card col-4 col-md-12 d-md-flex m-md-1"
+						style={{ width: '18rem' }}
+					>
+						<div className="card-body">
+							<h5
+								className="card-title"
+								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
+							>
+								17 Mars 2023
+							</h5>
+							<p className="card-text">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<a href="#" className="btn btn-outline-secondary">
+								Voir plus
+							</a>
+						</div>
+					</div>
+
+					<div
+						className="card col-4 col-md-12 d-md-flex m-md-1"
+						style={{ width: '18rem' }}
+					>
+						<div className="card-body">
+							<h5
+								className="card-title"
+								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
+							>
+								18 Mars 2023
+							</h5>
+							<p className="card-text">
+								With supporting text below as a natural lead-in to additional
+								content.
+							</p>
+							<a href="#" className="btn btn-outline-secondary">
+								Voir plus
+							</a>
+						</div>
+					</div>
+
 					{/*end annonces*/}
 				</div>
 				{/*start services*/}
@@ -102,7 +206,7 @@ const Articles = () => {
 					<div className="row">
 						<div className="col-12">
 							<div className="card text-bg-dark">
-								<img src={imgServices} className="card-img" alt="..." />
+								<img src={service} className="card-img" alt="..." />
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
 									<button className="btn bg-secondary text-light">
 										Services
@@ -163,6 +267,9 @@ const Articles = () => {
 					</div>
 					{/*end chiffres*/}
 				</div>
+				{/*start entreprise */}
+
+				{/*end entreprise */}
 			</div>
 			{/*map*/}
 		</div>
