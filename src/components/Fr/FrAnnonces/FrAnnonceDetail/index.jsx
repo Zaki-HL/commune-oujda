@@ -42,8 +42,8 @@ const FrAnnonceDetail = () => {
 				</tbody>
 			</table>
 			<div class="row">
-				<h5 className="mt-3">Fichiers attachés :</h5>
-				<embed src={myFile} type="application/pdf" width="500" height="400" />
+				<h5 className="mb-3">Fichiers attachés :</h5>
+				<embed src={myFile} type="application/pdf" height="900" />
 			</div>
 		</div>
 	);
