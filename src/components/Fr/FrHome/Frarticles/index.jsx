@@ -23,11 +23,9 @@ const Articles = () => {
 				<div className="col-md-5">
 					{/* Start President */}
 					<div className="card text-bg-dark">
-						<img src={Azzaoui} className="card-img" alt="..." />
+						<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="presi card-title  p-2 p-md-1">
-								Mohamed El Azzaoui
-							</h5>
+							<h5 className="card-title  p-2 p-md-1">Mohamed El Azzaoui</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -50,7 +48,7 @@ const Articles = () => {
 					{/* End Article */}
 				</div>
 			</div>
-			<h4 className="evenements text-center m-3">Evénements</h4>
+			<h4 className="evenements text-center mt-5">Evénements</h4>
 			{/* Ligne 2 evenement*/}
 			<div id="carouselExampleCaptions" className="carousel slide mt-3">
 				<div className="carousel-indicators">
@@ -78,21 +76,21 @@ const Articles = () => {
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<img src={even4} className="d-block w-100" alt="..." />
-						<div className="carousel-caption d-none d-md-block">
+						<div className="carousel-caption">
 							<h5>shi is all in at CISCO LIVE</h5>
 							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<img src={even2} className="d-block w-100" alt="..." />
-						<div className="carousel-caption d-none d-md-block">
+						<div className="carousel-caption">
 							<h5>ERP</h5>
 							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542..</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src={even3} className="d-block w-100" alt="..." />
-						<div class="carousel-caption d-none d-md-block">
+						<div class="carousel-caption">
 							<h5>DOMO PALOOZA</h5>
 							<p>June 28-16, 2023 | Las Vegas, Nevada | Booth 2542.</p>
 						</div>
