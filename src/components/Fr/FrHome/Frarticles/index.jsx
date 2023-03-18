@@ -9,6 +9,11 @@ import even4 from '/imgs/even4.jpg';
 import even2 from '/imgs/even2.jpg';
 import even3 from '/imgs/even3.jpg';
 import service from '/imgs/service.webp';
+
+import onee from '/imgs/onee.png';
+import oncf from '/imgs/oncf1.png';
+import radeeo from '/imgs/radeeo.png';
+import ctm from '/imgs/ctm.png';
 //import ctm from '/imgs/ctm.png';
 //import oncf from '/imgs/oncf.png';
 //import onee from '/imgs/onee.png';
@@ -25,7 +30,9 @@ const Articles = () => {
 					<div className="card text-bg-dark">
 						<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="card-title  p-2 p-md-1 nom_president">Mohamed El Azzaoui</h5>
+							<h5 className="card-title  p-2 p-md-1 nom_president">
+								Mohamed El Azzaoui
+							</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -203,7 +210,28 @@ const Articles = () => {
 					{/*end chiffres*/}
 				</div>
 				{/*start partenaires */}
-
+				<div className="row mt-2">
+					<div className="col-md-3">
+						<a href="lien-vers-partenaire1">
+							<img src={onee} alt="Logo 1" className="img-fluid mx-auto" />
+						</a>
+					</div>
+					<div className="col-md-3">
+						<a href="lien-vers-partenaire2">
+							<img src={oncf} alt="Logo 2" className="img-fluid mx-auto" />
+						</a>
+					</div>
+					<div className="col-md-3">
+						<a href="lien-vers-partenaire3">
+							<img src={radeeo} alt="Logo 3" className="img-fluid mx-auto" />
+						</a>
+					</div>
+					<div className="col-md-3">
+						<a href="lien-vers-partenaire4">
+							<img src={ctm} alt="Logo 4" className="img-fluid mx-auto" />
+						</a>
+					</div>
+				</div>
 				{/*end partenaires */}
 			</div>
 			{/*map*/}
