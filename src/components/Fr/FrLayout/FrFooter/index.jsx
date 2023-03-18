@@ -70,33 +70,6 @@ const FrFooter = () => {
 
 					<section className="">
 						<MDBRow>
-							<MDBCol lg="4" md="6" className="mb-4 mb-md-0">
-								<h5 className="text-uppercase">Communes</h5>
-
-								<ul className="list-unstyled mb-0">
-									<li>
-										<a
-											href="https://www.casablancacity.ma/fr"
-											className="text-white"
-										>
-											Casablanca
-										</a>
-									</li>
-									<li>
-										<a href="https://agadir.ma/fr/" className="text-white">
-											Agadir
-										</a>
-									</li>
-									<li>
-										<a
-											href="https://mairiederabat.ma/fr-FR"
-											className="text-white"
-										>
-											Rabat
-										</a>
-									</li>
-								</ul>
-							</MDBCol>
 
 							<MDBCol lg="4" md="6" className="mb-4 mb-md-0">
 								<h5 className="text-uppercase">Arrondissements</h5>
