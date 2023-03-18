@@ -44,6 +44,7 @@ const FrAnnonceDetail = () => {
 			<div class="row">
 				<h5 className="mb-3">Fichiers attachés :</h5>
 				<embed src={myFile} type="application/pdf" height="900" />
+
 			</div>
 		</div>
 	);
