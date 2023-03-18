@@ -50,9 +50,7 @@ const Articles = () => {
 					{/* End Article */}
 				</div>
 			</div>
-			<h4 className="evenements" style={{ fontStyle: 'italic' }}>
-				Evénements
-			</h4>
+			<h4 className="evenements text-center m-3">Evénements</h4>
 			{/* Ligne 2 evenement*/}
 			<div id="carouselExampleCaptions" className="carousel slide mt-3">
 				<div className="carousel-indicators">
@@ -125,75 +123,52 @@ const Articles = () => {
 					<span className="visually-hidden">Next</span>
 				</button>
 			</div>
-			<button type="button" className="btn btn-outline-secondary btn-sm mt-1">
+			<button
+				type="button"
+				className="btn btn-outline-secondary btn-sm mt-2 d-block mx-auto"
+			>
 				voir plus
 			</button>
 			{/* Ligne 3*/}
 
 			<div className="row mt-5 align-items-center">
-				<div className="col-md-4">
+				<div className="col-12 col-md-4">
 					{/*start announces*/}
-					<h4 className="announces" style={{ fontStyle: 'italic' }}>
-						Announces
-					</h4>
-					<div
-						className="card col-4 col-md-12 d-md-flex m-md-1"
-						style={{ width: '18rem' }}
-					>
+					<h4 className="announces text-center m-3">Announces</h4>
+					<div className="card col-12 col-md-12 d-md-flex m-2 mx-auto">
 						<div className="card-body">
-							<h5
-								className="card-title"
-								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
-							>
-								16 Mars 2023
-							</h5>
-							<p className="card-text">
+							<h5 className="card-title fw-bold">16 Mars 2023</h5>
+							<p className="card-text text-center">
 								With supporting text below as a natural lead-in to additional
 								content.
 							</p>
-							<a href="#" className="btn btn-outline-secondary">
+							<a href="#" className="btn btn-outline-secondary d-block">
 								Voir plus
 							</a>
 						</div>
 					</div>
 
-					<div
-						className="card col-4 col-md-12 d-md-flex m-md-1"
-						style={{ width: '18rem' }}
-					>
+					<div className="card col-12 col-md-12 d-md-flex m-2 mx-auto">
 						<div className="card-body">
-							<h5
-								className="card-title"
-								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
-							>
-								17 Mars 2023
-							</h5>
-							<p className="card-text">
+							<h5 className="card-title fw-bold">17 Mars 2023</h5>
+							<p className="card-text text-center">
 								With supporting text below as a natural lead-in to additional
 								content.
 							</p>
-							<a href="#" className="btn btn-outline-secondary">
+							<a href="#" className="btn btn-outline-secondary d-block">
 								Voir plus
 							</a>
 						</div>
 					</div>
 
-					<div
-						className="card col-4 col-md-12 d-md-flex m-md-1"
-						style={{ width: '18rem' }}
-					>
+					<div className="card col-12 col-md-12 d-md-flex m-2 mx-auto">
 						<div className="card-body">
-							<h5
-								className="card-title"
-								style={{ fontStyle: 'italic', fontWeight: 'bold' }}
-							>
-								18 Mars 2023
-							</h5>
-							<p className="card-text">
+							<h5 className="card-title fw-bold">18 Mars 2023</h5>
+							<p className="card-text text-center">
 								With supporting text below as a natural lead-in to additional
 								content.
 							</p>
-							<a href="#" className="btn btn-outline-secondary">
+							<a href="#" className="btn btn-outline-secondary d-block">
 								Voir plus
 							</a>
 						</div>
@@ -246,30 +221,16 @@ const Articles = () => {
 											</div>
 											<div className="tmin p-2 bg-info mt-2">color info</div>
 										</div>
-										<div className="tmin p-3 py-4 flex-fill bg-danger mx-2 d-flex align-items-center text-center">
-											color red
-										</div>
 									</h3>
-								</div>
-								<div className="d-flex align-items-center justify-content-center">
-									<div className="tmin p-3 py-4 flex-grow-1 bg-primary mt-2 d-flex align-items-center justify-content-center text-center">
-										350k voiture
-									</div>
-									<div className="tmin p-3 py-4 bg-secondary mt-2 mx-2 d-flex align-items-center text-center">
-										navbar
-									</div>
-									<div className="tmin p-3 py-4 bg-info mt-2 d-flex align-items-center text-center">
-										color info
-									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					{/*end chiffres*/}
 				</div>
-				{/*start entreprise */}
+				{/*start partenaires */}
 
-				{/*end entreprise */}
+				{/*end partenaires */}
 			</div>
 			{/*map*/}
 		</div>
