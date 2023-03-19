@@ -1,5 +1,5 @@
 import React from 'react';
-import babSidi from '/imgs/Night.jpg';
+import babSidi from '/imgs/bab-sidi.jpg';
 import coteOuest from '/imgs/cote-ouest.jpg';
 import entreeParc from '/imgs/l-entree-du-parc-1.jpg';
 import Elmedina from '/imgs/Ville-Oujda-Maroc.jpg';
