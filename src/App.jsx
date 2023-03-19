@@ -13,6 +13,7 @@ import ArMaVille from './components/Ar/ArMaVille';
 import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
 import FrEvenementDetail from './components/Fr/FrEvenements/FrEvenementDetail';
 import FrAnnonceDetail from './components/Fr/FrAnnonces/FrAnnonceDetail';
+import FrError from './components/Fr/FrError';
 
 const App = () => {
 	return (
@@ -21,6 +22,7 @@ const App = () => {
 				<Route path="/" element={<Navigate to="/fr" replace />} />
 
 				<Route path="/fr" element={<FrLayout />}>
+					<Route path="*" element={<FrError />} />
 					<Route index element={<FrHome />} />
 					<Route path="annonces" element={<FrAnnonces />} />
 					<Route path="annonces/:id" element={<FrAnnonceDetail />} />

@@ -1,11 +1,13 @@
 import React from 'react';
-import myFile from "/docs/file1.pdf";
+import myFile from '/docs/file1.pdf';
 
 const FrAnnonceDetail = () => {
 	return (
 		<div className="container p-5">
-			<h2 className="text-center"><u>Concours de recrutement : Technicien de 4ème grade ~ Echelle 8</u></h2>
-			<table class="table table-striped mt-4">
+			<h2 className="text-center">
+				<u>Concours de recrutement : Technicien de 4ème grade ~ Echelle 8</u>
+			</h2>
+			<table className="table table-striped mt-4">
 				<tbody>
 					<tr>
 						<th>Collectivité organisatrice :</th>
@@ -20,31 +22,32 @@ const FrAnnonceDetail = () => {
 						<td> genie civil/ resaux informatique</td>
 					</tr>
 					<tr>
-						<th>Type de recrutement :	</th>
+						<th>Type de recrutement : </th>
 						<td>Recrutement statutaire</td>
 					</tr>
 					<tr>
-						<th>Nombre de postes :	</th>
+						<th>Nombre de postes : </th>
 						<td>2</td>
 					</tr>
 					<tr>
-						<th>Date de publication :	</th>
+						<th>Date de publication : </th>
 						<td>17 février 2023</td>
 					</tr>
 					<tr>
-						<th>Délai de dépôt des candidatures :	</th>
-						<td>13 mars 2023 <p className="text-danger">(Expiré)</p></td>
+						<th>Délai de dépôt des candidatures : </th>
+						<td>
+							13 mars 2023 <p className="text-danger">(Expiré)</p>
+						</td>
 					</tr>
 					<tr>
-						<th>Date du concours :	</th>
+						<th>Date du concours : </th>
 						<td>19 mars 2023</td>
 					</tr>
 				</tbody>
 			</table>
-			<div class="row">
+			<div className="row">
 				<h5 className="mb-3">Fichiers attachés :</h5>
 				<embed src={myFile} type="application/pdf" height="900" />
-
 			</div>
 		</div>
 	);

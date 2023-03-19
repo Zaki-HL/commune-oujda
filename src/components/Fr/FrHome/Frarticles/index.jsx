@@ -25,7 +25,9 @@ const Articles = () => {
 					<div className="card text-bg-dark">
 						<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 						<div className="card-img-overlay d-flex align-items-end justify-content-center">
-							<h5 className="card-title  p-2 p-md-1 nom_president">Mohamed El Azzaoui</h5>
+							<h5 className="card-title  p-2 p-md-1 nom_president">
+								Mohamed El Azzaoui
+							</h5>
 						</div>
 						{/* End President */}
 					</div>
@@ -62,7 +64,7 @@ const Articles = () => {
 							longer.
 						</p>
 						<p className="card-text">
-							<small class="text-muted">19 Mars 2023</small>
+							<small className="text-muted">19 Mars 2023</small>
 						</p>
 					</div>
 				</div>
@@ -94,7 +96,7 @@ const Articles = () => {
 					</div>
 				</div>
 			</div>
-			<div class="d-flex justify-content-center align-items-center mt-2">
+			<div className="d-flex justify-content-center align-items-center mt-2">
 				<button type="button" className="btn btn-outline-secondary btn-sm">
 					<a href="#" className="text-dark">
 						voir plus
@@ -157,7 +159,7 @@ const Articles = () => {
 								<img src={service} className="card-img" alt="..." />
 
 								<div className="card-img-overlay d-flex align-items-end justify-content-center">
-									<button type="button" class="btn btn-secondary btn-sm">
+									<button type="button" className="btn btn-secondary btn-sm">
 										voir plus
 									</button>
 								</div>

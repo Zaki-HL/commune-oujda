@@ -6,23 +6,23 @@ const FrAnnonces = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					<div class="card mt-4 mb-4">
-						<div class="card-body p-0">
-							<div class="derniersAvis">
-								<table class="table table-sm table-striped rounded">
-									<thead class="thead-light">
+					<div className="card mt-4 mb-4">
+						<div className="card-body p-0">
+							<div className="derniersAvis">
+								<table className="table table-sm table-striped rounded">
+									<thead className="thead-light">
 										<tr>
-											<th scope="col" class="text-center" width="150">
+											<th scope="col" className="text-center" width="150">
 												Publié le
 											</th>
-											<th scope="col" class="text-center">
+											<th scope="col" className="text-center">
 												Dernières annonces
 											</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<Link to="1">
 													<div className="annonces text-center">
 														<h3>16</h3>
@@ -43,7 +43,7 @@ const FrAnnonces = () => {
 											</td>
 										</tr>
 										<tr>
-											<td class="dateAvis">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>16</h3>
 													<h5>Mars</h5>
@@ -60,8 +60,8 @@ const FrAnnonces = () => {
 												</p>
 											</td>
 										</tr>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>15</h3>
 													<h5>Mars</h5>
@@ -79,7 +79,7 @@ const FrAnnonces = () => {
 											</td>
 										</tr>
 										<tr>
-											<td class="dateAvis">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>15</h3>
 													<h5>Mars</h5>
@@ -95,8 +95,8 @@ const FrAnnonces = () => {
 												</p>
 											</td>
 										</tr>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>14</h3>
 													<h5>Mars</h5>
@@ -111,8 +111,8 @@ const FrAnnonces = () => {
 												</p>
 											</td>
 										</tr>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>14</h3>
 													<h5>Mars</h5>
@@ -127,8 +127,8 @@ const FrAnnonces = () => {
 												</p>
 											</td>
 										</tr>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>13</h3>
 													<h5>Mars</h5>
@@ -145,8 +145,8 @@ const FrAnnonces = () => {
 												</p>
 											</td>
 										</tr>
-										<tr class="odd">
-											<td class="dateAvis">
+										<tr className="odd">
+											<td className="dateAvis">
 												<div className="annonces text-center">
 													<h3>13</h3>
 													<h5>Mars</h5>
@@ -176,22 +176,22 @@ const FrAnnonces = () => {
 							role="group"
 							aria-label="First group"
 						>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								1
 							</button>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								2
 							</button>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								3
 							</button>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								4
 							</button>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								5
 							</button>
-							<button type="button" class="btn btn-outline-dark">
+							<button type="button" className="btn btn-outline-dark">
 								...
 							</button>
 						</div>

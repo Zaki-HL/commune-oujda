@@ -14,7 +14,7 @@ const FrLanding = () => {
 						type="button"
 						data-bs-target="#carouselExampleCaptions"
 						data-bs-slide-to="0"
-						class="active"
+						className="active"
 						aria-current="true"
 						aria-label="Slide 1"
 					></button>
@@ -44,9 +44,9 @@ const FrLanding = () => {
 							<h3>Commune Oujda</h3>
 						</div>
 					</div>
-					<div class="carousel-item">
+					<div className="carousel-item">
 						<img src={myImage3} className="d-block w-100" alt="..." />
-						<div class="carousel-caption">
+						<div className="carousel-caption">
 							<h3>Commune Oujda</h3>
 						</div>
 					</div>
@@ -76,7 +76,6 @@ const FrLanding = () => {
 					<span className="visually-hidden">Next</span>
 				</button>
 			</div>
-			
 		</div>
 	);
 };
