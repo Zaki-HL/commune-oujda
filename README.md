@@ -1,6 +1,7 @@
 # Commune Project
 
 This repository contains a React project built with Vite. 
+you can view the website online on: https://commune-oujda.netlify.app
 
 ## Installation
 
