@@ -3,12 +3,16 @@ import './index.scss';
 
 const FrError = () => {
 	return (
-		<div className="p-5 bg-warning h-100">
-			<h1 className="text-center m-5">French Error Page</h1>
-			<Link to="/" className="d-block text-center m-5">
-				Retour à l'accueil
-			</Link>
+		<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>Oops!</h1>
+			</div>
+			<h2>code d'erreur : 404</h2>
+			<p>la page que vous recherchez semble introuvable</p>
+			<a href="/">returne à l'acceuil</a>
 		</div>
+	</div>
 	);
 };
 
