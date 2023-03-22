@@ -14,6 +14,7 @@ import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
 import FrEvenementDetail from './components/Fr/FrEvenements/FrEvenementDetail';
 import FrAnnonceDetail from './components/Fr/FrAnnonces/FrAnnonceDetail';
 import FrError from './components/Fr/FrError';
+import FrReclamation from './components/Fr/FrReclamation';
 
 const App = () => {
 	return (
@@ -31,6 +32,7 @@ const App = () => {
 					<Route path="articles/:id" element={<FrArticleDetail />} />
 					<Route path="evenements" element={<FrEvenements />} />
 					<Route path="evenements/:id" element={<FrEvenementDetail />} />
+					<Route path="reclamation" element={<FrReclamation />} />
 				</Route>
 
 				<Route path="/ar" element={<ArLayout />}>

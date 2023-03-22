@@ -10,7 +10,7 @@ const FrNavBar = () => {
 		>
 			<div className="container-fluid mx-1 fw-bold">
 				<Link className="navbar-brand" to="/fr">
-					<img src={logo} alt="..." className="img_l" />
+					<img src={logo} alt="..." className="img-fluid" />
 				</Link>
 				<button
 					className="navbar-toggler"
@@ -27,7 +27,7 @@ const FrNavBar = () => {
 					className="collapse navbar-collapse text-end"
 					id="navbarNavAltMarkup"
 				>
-					<div className="navbar-nav ms-auto">
+					<div className="navbar-nav mx-auto">
 						<NavLink className="nav-link text-dark" to="annonces">
 							Annonces
 						</NavLink>
@@ -41,10 +41,13 @@ const FrNavBar = () => {
 						<NavLink className="nav-link text-dark" to="evenements">
 							Evenements
 						</NavLink>
-						<NavLink className="nav-link text-dark" to="/ar">
-							Ar
+						<NavLink className="nav-link text-dark" to="reclamation">
+							Réclamation
 						</NavLink>
 					</div>
+					<NavLink className="nav-link text-dark" to="/ar">
+						Ar
+					</NavLink>
 				</div>
 			</div>
 		</nav>
