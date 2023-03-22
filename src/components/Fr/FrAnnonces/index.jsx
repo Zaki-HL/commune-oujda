@@ -23,7 +23,7 @@ const FrAnnonces = () => {
 									<tbody>
 										<tr className="odd">
 											<td className="dateAvis">
-												<Link to="1">
+												<Link className='decoration' to="1">
 													<div className="annonces text-center">
 														<h3>16</h3>
 														<h5>Mars</h5>
