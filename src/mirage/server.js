@@ -27,7 +27,7 @@ createServer({
 			body: 'La réunion, présidée par le wali de la région de l’Oriental et gouverneur de la préfecture d’Oujda-Angad, Mouad El Jamai, a été marquée aussi par la présentation de l’état d’avancement des projets de l’Initiative nationale pour le développement humain (INDH) programmés au titre de 2019, et du plan d’action relatif à la gestion de la plate-forme des jeunes de la préfecture d’Oujda-Angad.',
 			body_ar:
 				'وتميز الاجتماع ، الذي ترأسه والي المنطقة الشرقية ومحافظ محافظة وجدة - أنجاد ، معاد الجامعي ، بعرض حالة التقدم في مشاريع المبادرة الوطنية للتنمية البشرية المبرمجة. لعام 2019 ، وخطة العمل المتعلقة بإدارة منصة الشباب في محافظة وجدة - أنجاد.',
-			image: '/',
+			image: '/imgs/evenement1.jpeg',
 			date: '13 Mars 2023',
 		});
 		server.create('article', {
@@ -38,7 +38,7 @@ createServer({
 			body: 'Après le démarrage des trois Cités des métiers et des compétences dans les régions de Souss-Massa, l’Oriental et Laâyoune Sakia-El Hamra, quatre autres ouvriront leurs portes cette année, dans les régions de Rabat-Salé Kénitra, Casablanca-Settat, Béni Mellal-Khénifra et Tanger-Tétouan-Al Hoceïma.',
 			body_ar:
 				'بعد انطلاق المدن الثلاث من المدن والكفاءات في مناطق سوس ماسة والورينتال والعيون الساقية الحمراء ، سيفتح أربعة آخرون أبوابهم هذا العام في مناطق الرباط - سلا القنيطرة ، الدار البيضاء- سطات ، بني ملال خنيفرة وطنجة تطوان الحسيمة.			',
-			image: '/',
+			image: '/imgs/image1.jpeg',
 			date: '13 Mars 2023',
 		});
 		server.create('article', {
@@ -48,7 +48,7 @@ createServer({
 			body: 'La deuxième phase de l’opération du règlement des frais du Hajj pour la saison 1444 de l’Hégire, pour les personnes inscrites dans les listes d’attente selon l’ordre établi par le processus de tirage au sort et qui remplaceront ceux n’ayant pas pu effectué le règlement des frais du Hajj pour la saison 1444 lors de la première phase, se déroulera du 23 au 29 mars 2023, a annoncé, lundi, le ministère des Habous et des Affaires Islamiques.',
 			body_ar:
 				'المرحلة الثانية من عملية سداد رسوم الحج لموسم 1444 هجرية للمسجلين في قوائم الانتظار حسب الترتيب الذي تحدده عملية القرعة والذين سيحلون محل غير القادرين على دفع رسوم الحج لعام 1444 أعلنت وزارة الأوقاف والشؤون الإسلامية ، اليوم الاثنين ، أن الموسم خلال المرحلة الأولى ، سيقام في الفترة من 23 إلى 29 مارس 2023.			',
-			image: '/',
+			image: '/imgs/hajj.jpeg',
 			date: '13 Mars 2023',
 		});
 		server.create('article', {
@@ -59,7 +59,7 @@ createServer({
 			body: 'Le Maroc doit adapter son économie pour faire face à la menace croissante du changement climatique qui occasionne des sécheresses plus fréquentes, a indiqué la ministre de l Économie et des Finances, Nadia Fettah Alaoui.',
 			body_ar:
 				'قالت وزيرة الاقتصاد والمالية نادية فتاح العلوي إن المغرب يجب أن يكيّف اقتصاده لمواجهة التهديد المتزايد للتغير المناخي الذي يتسبب في مزيد من موجات الجفاف المتكررة.			',
-			image: '/',
+			image: '/imgs/image2.jpeg',
 			date: '12 Mars 2023',
 		});
 		server.create('article', {
@@ -71,7 +71,7 @@ createServer({
 			body: 'Bank Al-Maghrib et le Réseau régional des départements de Recherche des Banques centrales du Moyen-Orient et de l Afrique du Nord lancent un appel à communication pour la troisième conférence annuelle du réseau, qui aura lieu les 14 et 15 septembre 2023 à Rabat, en format hybride, sur le thème «Marchés du travail et transformations structurelles». La date limite de soumission est le 14 mai 2023.',
 			body_ar:
 				'يطلق بنك المغرب والشبكة الإقليمية لإدارات البحث في البنوك المركزية للشرق الأوسط وشمال إفريقيا دعوة لتقديم أوراق بحثية للمؤتمر السنوي الثالث للشبكة الذي سيعقد يومي 14 و 15 سبتمبر 2023 في الرباط ، بصيغة مختلطة ، حول موضوع "أسواق العمل والتحولات الهيكلية". الموعد النهائي للتقديم هو 14 مايو 2023.			',
-			image: '/',
+			image: '/imgs/image3.jpeg',
 			date: '12 Mars 2023',
 		});
 		server.create('article', {
@@ -83,7 +83,7 @@ createServer({
 			body: 'La Fondation BMCE Bank pour l’Education et l’Environnement a signé une convention de collaboration avec la Fondation ProFuturo visant à promouvoir et à encourager la formation des enfants, des jeunes, des enseignants et des personnes en risque d exclusion sociale.',
 			body_ar:
 				'وقع BMCE Bank Foundation for Education and Environment اتفاقية تعاون مع مؤسسة ProFuturo تهدف إلى تعزيز وتشجيع تدريب الأطفال والشباب والمعلمين والأشخاص المعرضين لخطر الإقصاء الاجتماعي.			',
-			image: '/',
+			image: '/imgs/image4.jpeg',
 			date: '11 Mars 2023',
 		});
 		server.create('article', {
@@ -95,7 +95,7 @@ createServer({
 			body: 'Élaboré et publié par un collectif d experts, un document de travail sur les libertés fondamentales présente des propositions de réforme de divers textes : la Constitution, le Code de la famille, le Code pénal et le Code de la nationalité. Le groupe de travail à l origine de ce document se compose de huit membres : Asma Lamrabet, Driss Benhima, Yasmina Baddou, Jalil Benabbés-Taarji, Khadija El Amrani, Chafik Chraibi, Monique El Grichi et Mohamed Gaïzi. Il s agit d un collectif "paritaire, diversifié par les profils et les expériences, et essentiellement non partisan", comme l indique à Médias24 le coordinateur de ce collectif.',
 			body_ar:
 				'وثيقة عمل حول الحريات الأساسية ، أعدتها ونشرتها مجموعة من الخبراء ، تقدم مقترحات لإصلاح نصوص مختلفة: الدستور ، وقانون الأسرة ، وقانون العقوبات ، وقانون الجنسية.		تتكون مجموعة العمل التي أعدت هذه الوثيقة من ثمانية أعضاء: أسماء المرابط ، إدريس بن هيمة ، ياسمينة بادو ، جليل بن عباس الطرجي ، خديجة العمراني ، شفيق الشريبي ، مونيك الجريشي ، ومحمد جيزي.  إنها جماعية "متساوية ، متنوعة حسب السمات والتجارب ، وغير حزبية في الأساس" ، كما أوضح ميديا ​​24 منسق هذا التجمع.',
-			image: '/',
+			image: '/imgs/uneimage.jpeg',
 			date: '10 Mars 2023',
 		});
 		// End Article
