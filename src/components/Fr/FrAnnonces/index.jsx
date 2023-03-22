@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './index.scss';
 import { Link } from 'react-router-dom';
 
 const FrAnnonces = () => {
+	const [annonces, setAnnonces] = useState([]);
+
+	useEffect(() => {
+		fetch('/api/annonces')
+			.then(res => res.json())
+			.then(data => setAnnonces(data.annonces));
+	}, []);
+
 	return (
 		<div className="container">
 			<div className="row">
@@ -20,148 +29,28 @@ const FrAnnonces = () => {
 											</th>
 										</tr>
 									</thead>
-									<tbody>
-										<tr className="odd">
-											<td className="dateAvis">
-												<Link className='decoration' to="1">
-													<div className="annonces text-center">
-														<h3>16</h3>
-														<h5>Mars</h5>
-													</div>
-												</Link>
-											</td>
-											<td>
-												<Link to="1">
-													<p>
-														Publication de la liste des convoqués pour le
-														concours de recrutement d'un Technicien de 4ème
-														grade ~ Echelle 8
-														<strong className="text-danger"> (2) </strong>
-														postes au Commune MAKNASSA ACHARQIA (Province Taza)
-													</p>
-												</Link>
-											</td>
-										</tr>
-										<tr>
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>16</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Publication de la liste des convoqués pour l'appel à
-													candidature pour le poste Appel à candidature pour le
-													poste de Chef de service (Services centraux)
-													<strong className="text-danger"> (1) </strong>
-													poste au Agence Nationale de la Sécurité Routière
-													(NARSA)
-												</p>
-											</td>
-										</tr>
-										<tr className="odd">
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>15</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Annulation de l'appel à candidature pour le poste
-													expert
-													<strong className="text-danger"> (1) </strong>
-													poste au Ministère de la Transition énergétique et du
-													Développement durable - Département du Développement
-													durable
-												</p>
-											</td>
-										</tr>
-										<tr>
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>15</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Appel à candidature pour le poste expert
-													<strong className="text-danger"> (1) </strong>
-													poste au Ministère de la Transition énergétique et du
-													Développement durable - Département du Développement
-													durable
-												</p>
-											</td>
-										</tr>
-										<tr className="odd">
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>14</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Publication de la liste des convoqués pour le concours
-													de recrutement d'un AGENT DE MAITRISE
-													<strong className="text-danger"> (2) </strong>
-													postes à la Société des Silos Portuaires (SOSIPO)
-												</p>
-											</td>
-										</tr>
-										<tr className="odd">
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>14</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Appel à candidature pour le poste RESPONSABLE
-													ADMINISTRATIF ET FINANCIER
-													<strong className="text-danger"> (1) </strong>
-													poste au Casablanca Iskane et Equipements
-												</p>
-											</td>
-										</tr>
-										<tr className="odd">
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>13</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Appel à candidature pour
-													<strong className="text-danger"> (6) </strong>
-													postes de chef de division et
-													<strong className="text-danger"> (16) </strong>
-													postes de chef de service ou assimilés au Ministère de
-													la Santé et de la Protection sociale
-												</p>
-											</td>
-										</tr>
-										<tr className="odd">
-											<td className="dateAvis">
-												<div className="annonces text-center">
-													<h3>13</h3>
-													<h5>Mars</h5>
-												</div>
-											</td>
-											<td>
-												<p>
-													Annulation du concours de recrutement d'un Adjoint
-													technique 3ème grade ~ Echelle 6
-													<strong className="text-danger"> (3) </strong>
-													postes au Conseil provincial (Province Chefchaouen)
-												</p>
-											</td>
-										</tr>
-									</tbody>
+									{annonces.length > 0 &&
+										annonces.map(e => (
+											<tbody key={e.id}>
+												<tr className="odd">
+													<td className="dateAvis">
+														<Link className='decoration' to="1">
+															<div className="annonces text-center">
+																<h3>{e.date}</h3>
+																<h5>{e.date2}</h5>
+															</div>
+														</Link>
+													</td>
+													<td>
+														<Link to={e.id}>
+															<p>
+																{e.title}
+															</p>
+														</Link>
+													</td>
+												</tr>
+											</tbody>
+										))}
 								</table>
 							</div>
 						</div>

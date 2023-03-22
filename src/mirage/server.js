@@ -176,7 +176,8 @@ createServer({
 				'Publication de la liste des convoqués pour le concours de recrutement d un AGENT DE MAITRISE (2) postes à la Société des Silos Portuaires (SOSIPO)',
 			title_ar:
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
-			date: '14 Mars 2023',
+			date: '16',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '2',
@@ -184,7 +185,8 @@ createServer({
 				'Publication de la liste des convoqués pour l appel à candidature pour le poste Appel à candidature pour le poste de Chef de service (Services centraux) (1) poste au Agence Nationale de la Sécurité Routière (NARSA)',
 			title_ar:
 				'نشر قائمة المستدعين للدعوة لتقديم الطلبات للمناصب. دعوة لتقديم الطلبات لمنصب رئيس الخدمة (الخدمات المركزية) (1) في الوكالة الوطنية للسلامة على الطرق (NARSA)',
-			date: '16 Mars 2023',
+			date: '16',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '3',
@@ -192,7 +194,8 @@ createServer({
 				'Annulation de l appel à candidature pour le poste expert (1) poste au Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			title_ar:
 				'إلغاء دعوة تقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
-			date: '15 Mars 2023',
+			date: '15',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '4',
@@ -200,7 +203,8 @@ createServer({
 				'Appel à candidature pour le poste expert (1) poste au Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			title_ar:
 				'دعوة لتقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
-			date: '15 Mars 2023',
+			date: '15',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '5',
@@ -208,7 +212,8 @@ createServer({
 				'Publication de la liste des convoqués pour le concours de recrutement d un AGENT DE MAITRISE (2) postes à la Société des Silos Portuaires (SOSIPO)',
 			title_ar:
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
-			date: '14 Mars 2023',
+			date: '14',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '6',
@@ -216,7 +221,8 @@ createServer({
 				'Appel à candidature pour le poste RESPONSABLE ADMINISTRATIF ET FINANCIER (1) poste au Casablanca Iskane et Equipements',
 			title_ar:
 				'دعوة لتقديم الطلبات لشغل منصب مدير إداري ومالي (1) في شركة الدار البيضاء إسكان والمعدات',
-			date: '14 Mars 2023',
+			date: '14',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '7',
@@ -224,7 +230,8 @@ createServer({
 				'Appel à candidature pour (6) postes de chef de division et (16) postes de chef de service ou assimilés au Ministère de la Santé et de la Protection sociale',
 			title_ar:
 				'دعوة لتقديم طلبات (6) وظائف رئيس شعبة و (16) منصب رئيس خدمة أو ما في حكمها بوزارة الصحة والحماية الاجتماعية',
-			date: '13 Mars 2023',
+			date: '13',
+			date2: 'Mars',
 		});
 		server.create('annonce', {
 			id: '8',
@@ -232,7 +239,8 @@ createServer({
 				'Annulation du concours de recrutement d un Adjoint technique 3ème grade ~ Echelle 6 (3) postes au Conseil provincial (Province Chefchaouen)',
 			title_ar:
 				'إلغاء مسابقة الاستقدام لمساعد تقني من الدرجة الثالثة ~ مقياس 6 (3) في مجلس المحافظة (ولاية شفشاون)',
-			date: '13 Mars 2023',
+			date: '13',
+			date2: 'Mars',
 		});
 		// End Annonces
 	},
