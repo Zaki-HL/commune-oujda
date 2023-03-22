@@ -4,8 +4,8 @@ import './index.scss';
 const FrError = () => {
 	return (
 		<div id="notfound">
-			<div class="notfound">
-				<div class="notfound-404">
+			<div className="notfound">
+				<div className="notfound-404">
 					<h1>Oops!</h1>
 				</div>
 				<h2>code d'erreur : 404</h2>

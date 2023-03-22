@@ -1,14 +1,36 @@
-import React from 'react';
-import imgArticle2 from '/imgs/article2.png';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 const FrArticleDetail = () => {
+	const params = useParams();
+	const [articles, setArticles] = useState([]);
+
+	useEffect(() => {
+		fetch(`/api/articles/${params.id}`)
+			.then(res => res.json())
+			.then(data => setArticles(data.articles));
+	}, []);
 	return (
-		<div className='container pt-3'>
-			<a className='p-3 pt-1 d-block' href='/fr/articles'>← Retour</a>
-			<img className='w-100 mx-auto d-block' src={imgArticle2} alt='image article 1' style={{ maxWidth: '900px' }}/>
-			<h1 className='text-center mt-5'>Le Maroc a la biennale DefExpo en Inde - Médias24</h1>
-			<p className='text-center text-muted'>14 Mars 2023</p>
-			<p className='mt-4'>Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense.Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense. Une délégation marocaine a pris part à DefExpo 2022, organisée à Gandhinagar en Inde, du 18 au 22 octobre. DefExpo est un événement biennal phare du ministère indien de la Défense.</p>
+		<div className="container pt-3">
+			<Link className="p-3 pt-1 d-block" to="/fr/articles">
+				← Retour
+			</Link>
+
+			{articles ? (
+				<>
+					<img
+						className="w-100 mx-auto d-block"
+						src={articles.image}
+						alt={articles.title}
+						style={{ maxWidth: '900px' }}
+					/>
+					<h1 className="text-center mt-5">{articles.title}</h1>
+					<p className="text-center text-muted">{articles.date}</p>
+					<p className="mt-4">{articles.body}</p>
+				</>
+			) : (
+				<h2 className="text-center">Loading ...</h2>
+			)}
 		</div>
 	);
 };
