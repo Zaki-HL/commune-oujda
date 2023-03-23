@@ -45,13 +45,13 @@ const ArNavBar = () => {
 							مناسبات
 						</NavLink>
 						<NavLink className="nav-link text-dark" to="reclamation">
-							مطالبة
+							شكوى
 						</NavLink>
 					</div>
 				</div>
 				<NavLink className="nav-link text-dark" to="/fr">
-							Fr
-						</NavLink>
+					Fr
+				</NavLink>
 			</div>
 		</nav>
 	);
