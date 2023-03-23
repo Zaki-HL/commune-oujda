@@ -10,6 +10,7 @@ import ArHome from './components/Ar/ArHome';
 import ArLayout from './components/Ar/ArLayout';
 import ArAnnonces from './components/Ar/ArAnnonces';
 import ArArticles from './components/Ar/ArArticles';
+import ArEvenements from './components/Ar/ArEvenements';
 import ArMaVille from './components/Ar/ArMaVille';
 import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
 import ArArticleDetail from './components/Ar/ArArticles/ArArticleDetail';
@@ -46,6 +47,7 @@ const App = () => {
 					<Route path="ma-ville" element={<ArMaVille />} />
 					<Route path="articles" element={<ArArticles />} />
 					<Route path="articles/:id" element={<ArArticleDetail/>} />
+					<Route path="evenements" element={<ArEvenements />} />
 					<Route path="reclamation" element={<ArReclamation />} />
 				</Route>
 			</Routes>
