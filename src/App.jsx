@@ -20,12 +20,15 @@ import ArAnnonceDetail from './components/Ar/ArAnnonces/ArAnnonceDetail';
 import FrError from './components/Fr/FrError';
 import FrReclamation from './components/Fr/FrReclamation';
 import ArReclamation from './components/Ar/ArReclamation';
+import Auth from './components/Auth';
+import Login from './components/Auth/Login';
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Navigate to="/fr" replace />} />
+				<Route path="login" element={<Login />} />
 
 				<Route path="/fr" element={<FrLayout />}>
 					<Route path="*" element={<FrError />} />
@@ -37,16 +40,18 @@ const App = () => {
 					<Route path="articles/:id" element={<FrArticleDetail />} />
 					<Route path="evenements" element={<FrEvenements />} />
 					<Route path="evenements/:id" element={<FrEvenementDetail />} />
-					<Route path="reclamation" element={<FrReclamation />} />
+					<Route element={<Auth />}>
+						<Route path="reclamation" element={<FrReclamation />} />
+					</Route>
 				</Route>
 
 				<Route path="/ar" element={<ArLayout />}>
 					<Route index element={<ArHome />} />
 					<Route path="annonces" element={<ArAnnonces />} />
-					<Route path="annonces/:id" element={<ArAnnonceDetail/>} />
+					<Route path="annonces/:id" element={<ArAnnonceDetail />} />
 					<Route path="ma-ville" element={<ArMaVille />} />
 					<Route path="articles" element={<ArArticles />} />
-					<Route path="articles/:id" element={<ArArticleDetail/>} />
+					<Route path="articles/:id" element={<ArArticleDetail />} />
 					<Route path="evenements" element={<ArEvenements />} />
 					<Route path="reclamation" element={<ArReclamation />} />
 				</Route>
