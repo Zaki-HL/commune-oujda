@@ -16,7 +16,7 @@ createServer({
 			title_ar: 'المغرب في بينالي DefExpo بالهند',
 			body_ar: `شارك وفد مغربي في معرض DefExpo 2022 الذي نُظم في جانديناغار بالهند في الفترة من 18 إلى 22 أكتوبر. DefExpo هو حدث رئيسي يعقد مرة كل سنتين لوزارة الدفاع الهندية.`,
 			image: '/imgs/article2.png',
-			date: '14 Mars 2023',
+			date: '14 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '2',
@@ -28,7 +28,7 @@ createServer({
 			body_ar:
 				'وتميز الاجتماع ، الذي ترأسه والي المنطقة الشرقية ومحافظ محافظة وجدة - أنجاد ، معاد الجامعي ، بعرض حالة التقدم في مشاريع المبادرة الوطنية للتنمية البشرية المبرمجة. لعام 2019 ، وخطة العمل المتعلقة بإدارة منصة الشباب في محافظة وجدة - أنجاد.',
 			image: '/imgs/evenement1.jpeg',
-			date: '13 Mars 2023',
+			date: '13 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '3',
@@ -39,7 +39,7 @@ createServer({
 			body_ar:
 				'بعد انطلاق المدن الثلاث من المدن والكفاءات في مناطق سوس ماسة والورينتال والعيون الساقية الحمراء ، سيفتح أربعة آخرون أبوابهم هذا العام في مناطق الرباط - سلا القنيطرة ، الدار البيضاء- سطات ، بني ملال خنيفرة وطنجة تطوان الحسيمة.			',
 			image: '/imgs/image1.jpeg',
-			date: '13 Mars 2023',
+			date: '13 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '4',
@@ -49,7 +49,7 @@ createServer({
 			body_ar:
 				'المرحلة الثانية من عملية سداد رسوم الحج لموسم 1444 هجرية للمسجلين في قوائم الانتظار حسب الترتيب الذي تحدده عملية القرعة والذين سيحلون محل غير القادرين على دفع رسوم الحج لعام 1444 أعلنت وزارة الأوقاف والشؤون الإسلامية ، اليوم الاثنين ، أن الموسم خلال المرحلة الأولى ، سيقام في الفترة من 23 إلى 29 مارس 2023.			',
 			image: '/imgs/hajj.jpeg',
-			date: '13 Mars 2023',
+			date: '13 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '5',
@@ -60,7 +60,7 @@ createServer({
 			body_ar:
 				'قالت وزيرة الاقتصاد والمالية نادية فتاح العلوي إن المغرب يجب أن يكيّف اقتصاده لمواجهة التهديد المتزايد للتغير المناخي الذي يتسبب في مزيد من موجات الجفاف المتكررة.			',
 			image: '/imgs/image2.jpeg',
-			date: '12 Mars 2023',
+			date: '12 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '6',
@@ -72,7 +72,7 @@ createServer({
 			body_ar:
 				'يطلق بنك المغرب والشبكة الإقليمية لإدارات البحث في البنوك المركزية للشرق الأوسط وشمال إفريقيا دعوة لتقديم أوراق بحثية للمؤتمر السنوي الثالث للشبكة الذي سيعقد يومي 14 و 15 سبتمبر 2023 في الرباط ، بصيغة مختلطة ، حول موضوع "أسواق العمل والتحولات الهيكلية". الموعد النهائي للتقديم هو 14 مايو 2023.			',
 			image: '/imgs/image3.jpeg',
-			date: '12 Mars 2023',
+			date: '12 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '7',
@@ -84,7 +84,7 @@ createServer({
 			body_ar:
 				'وقع BMCE Bank Foundation for Education and Environment اتفاقية تعاون مع مؤسسة ProFuturo تهدف إلى تعزيز وتشجيع تدريب الأطفال والشباب والمعلمين والأشخاص المعرضين لخطر الإقصاء الاجتماعي.			',
 			image: '/imgs/image4.jpeg',
-			date: '11 Mars 2023',
+			date: '11 / 03 / 2023',
 		});
 		server.create('article', {
 			id: '8',
@@ -96,7 +96,7 @@ createServer({
 			body_ar:
 				'وثيقة عمل حول الحريات الأساسية ، أعدتها ونشرتها مجموعة من الخبراء ، تقدم مقترحات لإصلاح نصوص مختلفة: الدستور ، وقانون الأسرة ، وقانون العقوبات ، وقانون الجنسية.		تتكون مجموعة العمل التي أعدت هذه الوثيقة من ثمانية أعضاء: أسماء المرابط ، إدريس بن هيمة ، ياسمينة بادو ، جليل بن عباس الطرجي ، خديجة العمراني ، شفيق الشريبي ، مونيك الجريشي ، ومحمد جيزي.  إنها جماعية "متساوية ، متنوعة حسب السمات والتجارب ، وغير حزبية في الأساس" ، كما أوضح ميديا ​​24 منسق هذا التجمع.',
 			image: '/imgs/uneimage.jpeg',
-			date: '10 Mars 2023',
+			date: '10 / 03 / 2023',
 		});
 		// End Article
 
@@ -178,11 +178,14 @@ createServer({
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
 			date: '16',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Commune MAKNASSA ACHARQIA (Province Taza )',
 			body2: 'Technicien de 4ème grade ~ Echelle 8',
+			body1_ar: 'بلدية مكناسه الشرقيه (إقليم تازة)',
+			body2_ar: 'تقني من الدرجة الرابعة ~ مقياس 8',
 			body3: '2',
-			body4: '17 février 2023',
-			body5: '13 mars 2023',
+			body4: '17 / 02 / 2023',
+			body5: '13 / 03 / 2023',
 			pdf: '/docs/file1.pdf',
 		});
 		server.create('annonce', {
@@ -193,11 +196,14 @@ createServer({
 				'نشر قائمة المستدعين للدعوة لتقديم الطلبات للمناصب. دعوة لتقديم الطلبات لمنصب رئيس الخدمة (الخدمات المركزية) (1) في الوكالة الوطنية للسلامة على الطرق (NARSA)',
 			date: '16',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Agence Nationale de la Sécurité Routière (NARSA)',
 			body2: 'Appel à candidature pour le poste de Chef de service (Services centraux)',
+			body1_ar: 'الوكالة الوطنية للسلامة على الطرق (NARSA)',
+			body2_ar: 'دعوة لتقديم الطلبات لمنصب رئيس الخدمة (الخدمات المركزية)',
 			body3: '1',
-			body4: '18 janvier 2023',
-			body5: '3 février 2023',
+			body4: '18 / 01 / 2023',
+			body5: '3 / 02 / 2023',
 			pdf: '/docs/file2.pdf',
 		});
 		server.create('annonce', {
@@ -208,11 +214,14 @@ createServer({
 				'إلغاء دعوة تقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
 			date: '15',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			body2: 'expert',
+			body1_ar: 'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
+			body2_ar: 'خبير',
 			body3: '1',
-			body4: '15 mars 2023',
-			body5: '3 avril 2023',
+			body4: '15 / 03 / 2023',
+			body5: '3 / 04 / 2023',
 			pdf: '/docs/file3.pdf',
 		});
 		server.create('annonce', {
@@ -223,11 +232,14 @@ createServer({
 				'دعوة لتقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
 			date: '15',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			body2: 'expert',
+			body1_ar: 'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
+			body2_ar: 'خبير',
 			body3: '1',
-			body4: '15 mars 2023',
-			body5: '3 avril 2023',
+			body4: '15 / 03 / 2023',
+			body5: '3 / 04 / 2023',
 			pdf: '/docs/file4.pdf',
 		});
 		server.create('annonce', {
@@ -238,11 +250,14 @@ createServer({
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
 			date: '14',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Société des Silos Portuaires (SOSIPO)',
 			body2: 'AGENT DE MAITRISE',
+			body1_ar: 'جمعية صوامع الموانئ (SOSIPO)',
+			body2_ar: 'وكيل مراقبة',
 			body3: '2',
-			body4: '16 février 2023',
-			body5: '2 mars 2023',
+			body4: '16 / 02 / 2023',
+			body5: '2 / 03 / 2023',
 			pdf: '/docs/file5.pdf',
 		});
 		server.create('annonce', {
@@ -253,11 +268,14 @@ createServer({
 				'دعوة لتقديم الطلبات لشغل منصب مدير إداري ومالي (1) في شركة الدار البيضاء إسكان والمعدات',
 			date: '14',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Casablanca Iskane et Equipements',
 			body2: 'RESPONSABLE ADMINISTRATIF ET FINANCIER',
+			body1_ar: 'الدار البيضاء اسكان والمعدات',
+			body2_ar: 'مسؤول إداري و مالي',
 			body3: '1',
-			body4: '16 mars 2023',
-			body5: '3 avril 2023',
+			body4: '16 / 03 / 2023',
+			body5: '3 / 04 / 2023',
 			pdf: '/docs/file6.pdf',
 		});
 		server.create('annonce', {
@@ -268,11 +286,14 @@ createServer({
 				'دعوة لتقديم طلبات (6) وظائف رئيس شعبة و (16) منصب رئيس خدمة أو ما في حكمها بوزارة الصحة والحماية الاجتماعية',
 			date: '13',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Ministère de la Santé et de la Protection sociale',
 			body2: 'chef de division et chef de service',
+			body1_ar: 'وزارة الصحة والحماية الاجتماعية',
+			body2_ar: 'رئيس القسم',
 			body3: '22',
-			body4: '16 mars 2023',
-			body5: '31 mars 2023',
+			body4: '16 / 03 / 2023',
+			body5: '31 / 03 / 2023',
 			pdf: '/docs/file7.pdf',
 		});
 		server.create('annonce', {
@@ -283,11 +304,14 @@ createServer({
 				'نشر قائمة نتائج مسابقة التوظيف لفني الدرجة الثالثة ~ مقياس 9 (15 وظيفة) بولاية فحص عنجرة	',
 			date: '13',
 			date2: 'Mars',
+			date2_ar: 'مارس',
 			body1: 'Province de Fahs Anjara',
 			body2: 'Technicien de 3ème grade ~ Echelle 9',
+			body1_ar: 'محافظة فحص عنجرة',
+			body2_ar: 'تقني الصف الثالث ~ المقياس 9',
 			body3: '15',
-			body4: '8 février 2023',
-			body5: '28 février 2023',
+			body4: '8 / 02 / 2023',
+			body5: '28 / 02 / 2023',
 			pdf: '/docs/file8.pdf',
 		});
 		// End Annonces
