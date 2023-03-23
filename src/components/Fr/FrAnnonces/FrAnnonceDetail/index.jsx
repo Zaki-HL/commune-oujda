@@ -1,54 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import myFile from '/docs/file1.pdf';
 
 const FrAnnonceDetail = () => {
+	const params = useParams();
+	const [annonces, setAnnonces] = useState([]);
+
+	useEffect(() => {
+		fetch(`/api/annonces/${params.id}`)
+			.then(res => res.json())
+			.then(data => setAnnonces(data.annonces));
+	}, []);
 	return (
-		<div className="container p-5">
-			<h2 className="text-center">
-				<u>Concours de recrutement : Technicien de 4ème grade ~ Echelle 8</u>
-			</h2>
-			<table className="table table-striped mt-4">
-				<tbody>
-					<tr>
-						<th>Collectivité organisatrice :</th>
-						<td>Commune MAKNASSA ACHARQIA (Province Taza )</td>
-					</tr>
-					<tr>
-						<th>Grade :</th>
-						<td>Technicien de 4ème grade ~ Echelle 8</td>
-					</tr>
-					<tr>
-						<th>Spécialités :</th>
-						<td> genie civil/ resaux informatique</td>
-					</tr>
-					<tr>
-						<th>Type de recrutement : </th>
-						<td>Recrutement statutaire</td>
-					</tr>
-					<tr>
-						<th>Nombre de postes : </th>
-						<td>2</td>
-					</tr>
-					<tr>
-						<th>Date de publication : </th>
-						<td>17 février 2023</td>
-					</tr>
-					<tr>
-						<th>Délai de dépôt des candidatures : </th>
-						<td>
-							13 mars 2023 <p className="text-danger">(Expiré)</p>
-						</td>
-					</tr>
-					<tr>
-						<th>Date du concours : </th>
-						<td>19 mars 2023</td>
-					</tr>
-				</tbody>
-			</table>
-			<div className="row">
-				<h5 className="mb-3">Fichiers attachés :</h5>
-				<embed src={myFile} type="application/pdf" height="900" />
-			</div>
+		<div className="container p-3">
+			<Link className="p-3 pt-1 d-block" to="/fr/annonces">
+				← Retour
+			</Link>
+
+		{annonces ? (
+			<>
+				<h3 className="text-center">
+					<u>{annonces.title}</u>
+				</h3>
+				<table className="table table-striped mt-4">
+					<tbody>
+						<tr>
+							<th>Administration organisatrice : </th>
+							<td>{annonces.body1}</td>
+						</tr>
+						<tr>
+							<th>Grade/Poste :</th>
+							<td>{annonces.body2}</td>
+						</tr>
+						<tr>
+							<th>Nombre de postes : </th>
+							<td>{annonces.body3}</td>
+						</tr>
+						<tr>
+							<th>Date de publication : </th>
+							<td>{annonces.body4}</td>
+						</tr>
+						<tr>
+							<th>Date limite de dépôt : </th>
+							<td>
+								{annonces.body5}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div className="row">
+					<h5 className="mb-3">Fichiers attachés :</h5>
+					<embed src={annonces.pdf} type="application/pdf" height="900" />
+				</div>
+			</>
+			) : (
+				<h2 className="text-center">Loading ...</h2>
+			)}
 		</div>
 	);
 };

@@ -178,6 +178,12 @@ createServer({
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
 			date: '16',
 			date2: 'Mars',
+			body1: 'Commune MAKNASSA ACHARQIA (Province Taza )',
+			body2: 'Technicien de 4ème grade ~ Echelle 8',
+			body3: '2',
+			body4: '17 février 2023',
+			body5: '13 mars 2023',
+			pdf: '/docs/file1.pdf',
 		});
 		server.create('annonce', {
 			id: '2',
@@ -187,6 +193,12 @@ createServer({
 				'نشر قائمة المستدعين للدعوة لتقديم الطلبات للمناصب. دعوة لتقديم الطلبات لمنصب رئيس الخدمة (الخدمات المركزية) (1) في الوكالة الوطنية للسلامة على الطرق (NARSA)',
 			date: '16',
 			date2: 'Mars',
+			body1: 'Agence Nationale de la Sécurité Routière (NARSA)',
+			body2: 'Appel à candidature pour le poste de Chef de service (Services centraux)',
+			body3: '1',
+			body4: '18 janvier 2023',
+			body5: '3 février 2023',
+			pdf: '/docs/file2.pdf',
 		});
 		server.create('annonce', {
 			id: '3',
@@ -196,6 +208,12 @@ createServer({
 				'إلغاء دعوة تقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
 			date: '15',
 			date2: 'Mars',
+			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
+			body2: 'expert',
+			body3: '1',
+			body4: '15 mars 2023',
+			body5: '3 avril 2023',
+			pdf: '/docs/file3.pdf',
 		});
 		server.create('annonce', {
 			id: '4',
@@ -205,6 +223,12 @@ createServer({
 				'دعوة لتقديم الطلبات لشغل منصب خبير (1) في وزارة الطاقة الانتقالية والتنمية المستدامة - إدارة التنمية المستدامة',
 			date: '15',
 			date2: 'Mars',
+			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
+			body2: 'expert',
+			body3: '1',
+			body4: '15 mars 2023',
+			body5: '3 avril 2023',
+			pdf: '/docs/file4.pdf',
 		});
 		server.create('annonce', {
 			id: '5',
@@ -214,6 +238,12 @@ createServer({
 				'نشر قائمة المستدعين لمسابقة التوظيف لمنصب مدير (2) في Société des Silos Portuaires (SOSIPO)',
 			date: '14',
 			date2: 'Mars',
+			body1: 'Société des Silos Portuaires (SOSIPO)',
+			body2: 'AGENT DE MAITRISE',
+			body3: '2',
+			body4: '16 février 2023',
+			body5: '2 mars 2023',
+			pdf: '/docs/file5.pdf',
 		});
 		server.create('annonce', {
 			id: '6',
@@ -223,6 +253,12 @@ createServer({
 				'دعوة لتقديم الطلبات لشغل منصب مدير إداري ومالي (1) في شركة الدار البيضاء إسكان والمعدات',
 			date: '14',
 			date2: 'Mars',
+			body1: 'Casablanca Iskane et Equipements',
+			body2: 'RESPONSABLE ADMINISTRATIF ET FINANCIER',
+			body3: '1',
+			body4: '16 mars 2023',
+			body5: '3 avril 2023',
+			pdf: '/docs/file6.pdf',
 		});
 		server.create('annonce', {
 			id: '7',
@@ -232,15 +268,27 @@ createServer({
 				'دعوة لتقديم طلبات (6) وظائف رئيس شعبة و (16) منصب رئيس خدمة أو ما في حكمها بوزارة الصحة والحماية الاجتماعية',
 			date: '13',
 			date2: 'Mars',
+			body1: 'Ministère de la Santé et de la Protection sociale',
+			body2: 'chef de division et chef de service',
+			body3: '22',
+			body4: '16 mars 2023',
+			body5: '31 mars 2023',
+			pdf: '/docs/file7.pdf',
 		});
 		server.create('annonce', {
 			id: '8',
 			title:
-				'Annulation du concours de recrutement d un Adjoint technique 3ème grade ~ Echelle 6 (3) postes au Conseil provincial (Province Chefchaouen)',
+				'	Publication de la liste des résultats pour le concours de recrutement d un Technicien de 3ème grade ~ Echelle 9 (15 postes) au Province de Fahs Anjara',
 			title_ar:
-				'إلغاء مسابقة الاستقدام لمساعد تقني من الدرجة الثالثة ~ مقياس 6 (3) في مجلس المحافظة (ولاية شفشاون)',
+				'نشر قائمة نتائج مسابقة التوظيف لفني الدرجة الثالثة ~ مقياس 9 (15 وظيفة) بولاية فحص عنجرة	',
 			date: '13',
 			date2: 'Mars',
+			body1: 'Province de Fahs Anjara',
+			body2: 'Technicien de 3ème grade ~ Echelle 9',
+			body3: '15',
+			body4: '8 février 2023',
+			body5: '28 février 2023',
+			pdf: '/docs/file8.pdf',
 		});
 		// End Annonces
 	},
