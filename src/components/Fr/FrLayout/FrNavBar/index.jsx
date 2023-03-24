@@ -2,6 +2,8 @@ import './index.scss';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '/imgs/logo.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 
 const FrNavBar = () => {
 	return (
@@ -48,9 +50,28 @@ const FrNavBar = () => {
 						</NavLink>
 					</div>
 				</div>
-				<NavLink className="nav-link text-dark" to="/ar">
-					Ar
-				</NavLink>
+				<div class="dropdown">
+					<button
+						class="btn  dropdown-toggle"
+						type="button"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						<FontAwesomeIcon icon={faEllipsisV} color="black" />
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="dropdown-item" href="#">
+								Login
+							</a>
+						</li>
+						<li>
+							<NavLink className="dropdown-item" to="/ar">
+								Ar
+							</NavLink>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
