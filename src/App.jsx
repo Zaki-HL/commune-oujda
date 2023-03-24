@@ -15,6 +15,7 @@ import ArMaVille from './components/Ar/ArMaVille';
 import FrArticleDetail from './components/Fr/FrArticles/FrArticleDetail';
 import ArArticleDetail from './components/Ar/ArArticles/ArArticleDetail';
 import FrEvenementDetail from './components/Fr/FrEvenements/FrEvenementDetail';
+import ArEvenementDetail from './components/Ar/ArEvenements/ArEvenementDetail';
 import FrAnnonceDetail from './components/Fr/FrAnnonces/FrAnnonceDetail';
 import ArAnnonceDetail from './components/Ar/ArAnnonces/ArAnnonceDetail';
 import FrError from './components/Fr/FrError';
@@ -53,6 +54,7 @@ const App = () => {
 					<Route path="articles" element={<ArArticles />} />
 					<Route path="articles/:id" element={<ArArticleDetail />} />
 					<Route path="evenements" element={<ArEvenements />} />
+					<Route path="evenements/:id" element={<ArEvenementDetail />} />
 					<Route path="reclamation" element={<ArReclamation />} />
 				</Route>
 			</Routes>
