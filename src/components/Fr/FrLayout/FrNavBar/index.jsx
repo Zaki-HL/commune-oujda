@@ -5,15 +5,11 @@ import logo from '/imgs/logo.jpg';
 
 const FrNavBar = () => {
 	return (
-		<nav
-			className="navbar navbar-expand-md d-flex"
-			style={{ backgroundColor: 'white' }}
-		>
+		<nav className="navbar navbar-expand-md d-flex">
 			<div className="container-fluid mx-1 fw-bold">
-				{/* Show logo on the left and collapse button on the right on small screens */}
-				<div className="d-flex align-items-center">
+				<div className="d-flex justify-content-center align-items-center w-90 w-md-auto">
 					<button
-						className="navbar-toggler me-2"
+						className="navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarNavAltMarkup"
@@ -23,11 +19,13 @@ const FrNavBar = () => {
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
-					<Link className="navbar-brand" to="/fr">
+					<Link
+						className="navbar-brand m-0 d-flex justify-content-center w-100"
+						to="/fr"
+					>
 						<img src={logo} alt="..." className="img-fluid" />
 					</Link>
 				</div>
-				{/* Show logo on the left and links on the right on medium screens */}
 				<div
 					className="collapse navbar-collapse justify-content-md-center"
 					id="navbarNavAltMarkup"

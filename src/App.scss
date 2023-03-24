@@ -1,3 +1,13 @@
 .custom-filter {
 	filter: brightness(0.6);
 }
+
+.w-90 {
+	width: 90%;
+}
+
+@media (min-width: 768px) {
+	.w-md-auto {
+		width: auto;
+	}
+}
