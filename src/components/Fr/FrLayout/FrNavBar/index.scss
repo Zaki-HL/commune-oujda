@@ -27,3 +27,11 @@
 		transform: scaleX(1);
 	}
 }
+
+.dropdown-toggle::after {
+	display: none !important;
+}
+
+.dropdown:focus {
+	outline: none !important;
+}

@@ -9,7 +9,7 @@ const FrNavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-md d-flex">
 			<div className="container-fluid mx-1 fw-bold">
-				<div className="d-flex justify-content-center align-items-center w-90 w-md-auto">
+				<div className="d-flex justify-content-center align-items-center w-85 w-md-auto">
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -50,20 +50,20 @@ const FrNavBar = () => {
 						</NavLink>
 					</div>
 				</div>
-				<div class="dropdown">
+				<div className="dropdown">
 					<button
-						class="btn  dropdown-toggle"
+						className="btn  dropdown-toggle"
 						type="button"
 						data-bs-toggle="dropdown"
 						aria-expanded="false"
 					>
 						<FontAwesomeIcon icon={faEllipsisV} color="black" />
 					</button>
-					<ul class="dropdown-menu">
+					<ul className="dropdown-menu dropdown-menu-end">
 						<li>
-							<a class="dropdown-item" href="#">
+							<NavLink className="dropdown-item" to="/login">
 								Login
-							</a>
+							</NavLink>
 						</li>
 						<li>
 							<NavLink className="dropdown-item" to="/ar">
