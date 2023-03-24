@@ -110,7 +110,7 @@ createServer({
 			body: 'Action danse est une manifestation organisée par des jeunes et pour les jeunes et qui a pour vocation de sensibiliser les jeunes marocains à la danse en générale et à la danse contemporaine en particulier. Un festival en constante évolution, « Action Danse » s’adapte et innove d’année en année pour s’harmoniser autant que possible avec le stagiaire qui découvre et le spectateur curieux. Ne pas choquer mais déplacer poétiquement les repères pour redonner un nouveau visage à la danse au Maroc, tel est l’objectif d’Action Danse. Les éditions précédentes se sont intéressées à Casablanca, Rabat et Meknès. En 2011, l’association Fleur d’Orange fait voyager ACTION DANSE dans l’Oriental ; Oujda et Nador.',
 			body_ar:
 				'أكشن دانسي هو حدث ينظمه الشباب وللشباب ويهدف إلى توعية الشباب المغربي بالرقص بشكل عام والرقص المعاصر بشكل خاص.	مهرجان في تطور مستمر ، يتكيف "Action Danse" ويبتكر من سنة إلى أخرى لينسق قدر الإمكان مع المتدرب الذي يكتشف والمشاهد الفضولي. ليس الصدمة ولكن لتحريك المعايير بشكل شاعرى لإعطاء وجه جديد للرقص في المغرب ، هذا هو الهدف من Action Danse.	ركزت الإصدارات السابقة على الدار البيضاء والرباط ومكناس. في عام 2011 ، قامت جمعية Fleur d’Orange بالسفر ACTION DANSE في المنطقة الشرقية ؛ وجدة والناظور',
-			image: '',
+			image: '/imgs/festivale.jpg',
 			date: '1er au 9 mai',
 		});
 		server.create('evenement', {
@@ -122,7 +122,7 @@ createServer({
 			body: 'Inscriptions ouvertes, 3 passages sur scène dans la journée 	Vous avez un groupe de Danse (tous styles bienvenus et même recherchés !) de 6 ans à ... pas d âge limite ... n hésitez pas, faites votre demande d inscription et venez partager cette journée magique à nos côtés, pas de jugement, juste du partage et le plaisir de découvrir les Danses des Autres (deadline 31 octobre)',
 			body_ar:
 				'التسجيلات مفتوحة ، 3 ظهورات على خشبة المسرح خلال النهار	لديك مجموعة رقص (جميع الأنماط مرحب بها وحتى تريد!) من سن 6 سنوات إلى ... بلا حد للعمر ... لا تتردد ، قدم طلب التسجيل وتعال وشارك معنا هذا اليوم السحري ، بدون إصدار حكم ، فقط المشاركة ومتعة اكتشاف رقصات الآخرين (الموعد النهائي أكتوبر 31)',
-			image: '',
+			image: '/imgs/dance.png',
 			date: '26 Mars 2023',
 		});
 		server.create('evenement', {
@@ -132,7 +132,7 @@ createServer({
 			body: 'La 9ème édition du Festival des sciences de l’Oriental s’est ouverte vendredi au Parc écologique d’Oujda, dans le but de promouvoir les sciences et éveiller la curiosité scientifique, notamment auprès des élèves et étudiants. Cet événement, organisé jusqu’au 8 mai courant, sous le Haut patronage de SM le Roi Mohammed VI, par la Maison des sciences de l’Oriental et la Fondation Omar Ibn Abdelaziz, est placé cette année sous le thème «Après la pandémie, retour à la vie, à la source de la vie : l’eau».',
 			body_ar:
 				'افتتحت النسخة التاسعة من مهرجان العلوم الشرقية يوم الجمعة في حديقة وجدة البيئية ، بهدف تعزيز العلوم وإثارة الفضول العلمي ، خاصة بين التلاميذ والطلاب.	هذا الحدث ، الذي نظم حتى 8 مايو ، تحت الرعاية السامية لصاحب الجلالة الملك محمد السادس ، من قبل دار العلوم الشرقية ومؤسسة عمر بن عبد العزيز ، يتم وضعه هذا العام تحت شعار "بعد الوباء ، تعود الحياة ، إلى مصدر الحياة: الماء ".',
-			image: '',
+			image: '/imgs/sience.jfif',
 			date: '6 mai 2023',
 		});
 		server.create('evenement', {
@@ -144,7 +144,7 @@ createServer({
 			body: 'La journée du 19 mars sera marquée par la tenue d un forum des ONG sur "le contenu du discours royal et la politique de proximité", et le vernissage d une exposition de peinture, alors que le 20 mars connaîtra l organisation d un concours hippique de sauts d obstacles (la matinée) et un diner-débat initié par la section régionale du Syndicat National de la Presse Marocaine sur le développement dans la région. Le programme comporte également diverses activités culturelles, éducatives et de sensibilisation au profit des enfants.',
 			body_ar:
 				'سيشهد يوم 19 مارس عقد منتدى للمنظمات غير الحكومية حول محتوى الخطاب الملكي وسياسة القرب وافتتاح معرض للرسم ، بينما سيشهد 20 مارس تنظيم مسابقة قفز حصان في الصباح وعشاء نقاش بدأه القسم الجهوي للنقابة الوطنية للصحافة المغربية حول التنمية في المنطقة. كما يتضمن البرنامج أنشطة ثقافية وتعليمية وتوعوية متنوعة لصالح الأطفال.',
-			image: '',
+			image: '/imgs/ump.jpg',
 			date: '13 Mars 2023',
 		});
 		server.create('evenement', {
@@ -154,7 +154,7 @@ createServer({
 			body: 'Officiellement consacrée à la lutte pour les droits des femmes, la journée du 8 mars est parfois mal comprise, notamment par ceux qui souhaitent une « joyeuse fête de la femme », une rose rouge ou une boîte de chocolats à la main. Il arrive aussi que certaines personnes remettent en cause la pertinence et le bien-fondé de cette journée, en affirmant par exemple qu’« en France, l’égalité professionnelle est acquise », ou en réclamant « une Journée internationale des droits des hommes ». Voici quelques arguments et chiffres à opposer à ces affirmations.',
 			body_ar:
 				'يوم 8 مارس ، المخصص رسميًا للنضال من أجل حقوق المرأة ، يساء فهمه أحيانًا ، لا سيما من قبل أولئك الذين يرغبون في "يوم سعيد للمرأة" أو وردة حمراء أو علبة شوكولاتة في أيديهم.	ويصادف أيضًا أن يشكك البعض في أهمية وصحة هذا اليوم ، على سبيل المثال من خلال التأكيد على أنه "في فرنسا ، يتم اكتساب المساواة المهنية" ، أو من خلال الدعوة إلى "يوم دولي لحقوق الإنسان". فيما يلي بعض الحجج والأرقام لمعارضة هذه التأكيدات.',
-			image: '',
+			image: '/imgs/femme.jpg',
 			date: '8 mars 2023',
 		});
 		server.create('evenement', {
@@ -164,7 +164,7 @@ createServer({
 			body: 'Dans le cadre de la semaine de la Francophonie et en marge de la 25ème édition du Printemps des poètes, l’Institut français d’Oujda en partenariat avec l’Association Marocaine des Enseignants de Français CP Oujda organisera « La NUIT DE LA POÉSIE » le vendredi 31 mars 2023 à partir de 22h',
 			body_ar:
 				'في إطار أسبوع الفرانكفونية وعلى هامش النسخة الخامسة والعشرين من ربيع الشعراء ، ينظم المعهد الفرنسي لوجدة بالشراكة مع الجمعية المغربية للمعلمين الفرنسيين سي بي وجدة "La NUIT DE LA POÉSIE" يوم الجمعة 31 مارس ، 2023 من الساعة 10 مساءً',
-			image: '',
+			image: '/imgs/livre.png',
 			date: '31 mars 2023',
 		});
 		// End Evenements
