@@ -9,7 +9,7 @@ const ArNavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-md d-flex">
 			<div className="container-fluid mx-1 fw-bold">
-				<div className="d-flex justify-content-center align-items-center w-90 w-md-auto">
+				<div className="d-flex justify-content-center align-items-center w-85 w-md-auto">
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -25,7 +25,7 @@ const ArNavBar = () => {
 						className="navbar-brand m-0 d-flex justify-content-center w-100"
 						to="/ar"
 					>
-						<img src={logo} alt="..." className="img-fluid" />
+						<img src={logo} alt="logo" className="img-fluid" />
 					</Link>
 				</div>
 				<div

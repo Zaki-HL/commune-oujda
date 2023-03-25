@@ -25,7 +25,7 @@ const FrNavBar = () => {
 						className="navbar-brand m-0 d-flex justify-content-center w-100"
 						to="/fr"
 					>
-						<img src={logo} alt="..." className="img-fluid" />
+						<img src={logo} alt="logo" className="img-fluid" />
 					</Link>
 				</div>
 				<div
