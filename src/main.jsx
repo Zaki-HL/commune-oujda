@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './mirage/server';
+import 'leaflet/dist/leaflet.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>

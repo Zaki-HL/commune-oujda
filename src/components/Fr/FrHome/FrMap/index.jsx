@@ -1,96 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import MapGL, { Marker } from 'react-map-gl';
-import maplibregl from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
-import ImgMarker from '/imgs/map-mark.png';
+import React, { useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 
 function FrMap() {
-	const [viewport, setViewport] = useState({
-		longitude: -1.9149963212022796,
-		latitude: 34.68364610941581,
-	});
-
-	const [markerCoordinates, setMarkerCoordinates] = useState({
-		longitude: viewport.longitude,
-		latitude: viewport.latitude,
-	});
-
-	const positions = [
-		{
-			name: 'test',
-			longitude: -1.9149963212022796,
-			latitude: 34.68364610941581,
-		},
-		{
-			name: 'place 2',
-			longitude: -1.9139832042680856,
-			latitude: 34.68383315406636,
-		},
-		{
-			name: 'place 3',
-			longitude: -1.9128508774641813,
-			latitude: 34.68350852484969,
-		},
+	const [mapCenter, setMapCenter] = useState([34.68361, -1.91475]);
+	const markers = [
+		{ position: [34.68361, -1.91475], text: 'Commune Oujda 1' },
+		{ position: [51.506, -0.06], text: 'Marker 2' },
+		{ position: [51.507, -0.01], text: 'Marker 3' },
 	];
 
-	useEffect(() => {
-		setMarkerCoordinates({
-			longitude: viewport.longitude,
-			latitude: viewport.latitude,
-		});
-	}, [viewport]);
-
-	const handlePlaceClick = (longitude, latitude) => {
-		setViewport({
-			...viewport,
-			longitude,
-			latitude,
-			transitionDuration: 1000,
-		});
-		setMarkerCoordinates({
-			// update the marker coordinates
-			longitude,
-			latitude,
-		});
-	};
+	function MapUpdater() {
+		const map = useMap();
+		map.setView(mapCenter);
+		return null;
+	}
 
 	return (
-		<div className="App container py-5">
-			<div className="heading mb-3 p-3">
-				{positions.map(position => (
-					<span
-						key={position.name}
-						onClick={() =>
-							handlePlaceClick(position.longitude, position.latitude)
-						}
+		<div className="container">
+			<MapContainer
+				center={mapCenter}
+				zoom={16.5}
+				scrollWheelZoom={true}
+				style={{ minHeight: '50vh', minWidth: '100%' }}
+			>
+				<MapUpdater />
+				<TileLayer
+					attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+				/>
+				{markers.map(marker => (
+					<Marker key={marker.text} position={marker.position}>
+						<Popup>{marker.text}</Popup>
+					</Marker>
+				))}
+			</MapContainer>
+			<div>
+				{markers.map(marker => (
+					<button
+						key={marker.text}
+						onClick={() => setMapCenter(marker.position)}
 					>
-						{position.name}
-					</span>
+						{marker.text}
+					</button>
 				))}
 			</div>
-
-			<MapGL
-				mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_TOKEN}
-				mapboxApiUrl={process.env.REACT_APP_MAPBOX_API_URL}
-				mapLib={maplibregl}
-				{...viewport}
-				zoom="16.5"
-				onViewportChange={nextViewport => setViewport(nextViewport)}
-				style={{
-					width: '100%',
-					height: '50vh',
-					borderRadius: '1rem',
-				}}
-				mapStyle="https://api.maptiler.com/maps/streets/style.json?key=LrVj9aeSCQ1kjp2lhM8D"
-				interactive={false}
-			>
-				<Marker // render a single marker with the marker coordinates
-					longitude={markerCoordinates.longitude}
-					latitude={markerCoordinates.latitude}
-				>
-					<img style={{ width: '2rem' }} src={ImgMarker} alt="marker" />
-				</Marker>
-			</MapGL>
 		</div>
 	);
 }
