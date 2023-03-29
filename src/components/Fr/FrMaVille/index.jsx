@@ -264,15 +264,18 @@ const FrMaVille = () => {
 				</h3>
 				<br />
 				<div className="container">
-					<div className="row d-flex flex-column flex-md-row">
+					<div
+						className="row d-flex flex-column flex-md-row mx-auto"
+						style={{ textAlign: 'center' }}
+					>
 						<div className="col-4">
 							<img src={ka} alt="image" />
 						</div>
-						<div className="col-8">
+						<div className="col-8 mx-auto">
 							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
 								Kaak
 							</h4>
-							<p style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
+							<p style={{ fontFamily: 'Inria Sans' }}>
 								Le kâak ou plus correctement ka‘ak, littéralement « gâteau » en
 								arabe classique, est un terme qui peut désigner plusieurs
 								pâtisseries maghrébines et orientales sous forme d'anneaux
@@ -284,15 +287,18 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div className="row d-flex flex-column flex-md-row">
+					<div
+						className="row d-flex flex-column flex-md-row mx-auto"
+						style={{ textAlign: 'center' }}
+					>
 						<div className="col-4">
 							<img src={berkoukes} alt="image" />
 						</div>
-						<div className="col-8">
+						<div className="col-8 mx-auto">
 							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
 								Berkoukes
 							</h4>
-							<p style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
+							<p style={{ fontFamily: 'Inria Sans' }}>
 								Le berkoukes, appelé aussi berkoukech, avazine ou aïch, est un
 								plat traditionnel du Maghreb, préparé à base de pâtes en forme
 								de gros grains de couscous, de légumes de saison et de viande.Le
@@ -304,15 +310,18 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div className="row d-flex flex-column flex-md-row">
+					<div
+						className="row d-flex flex-column flex-md-row mx-auto"
+						style={{ textAlign: 'center' }}
+					>
 						<div className="col-4">
 							<img src={karan} alt="image" />
 						</div>
-						<div className="col-8">
+						<div className="col-8 mx-auto">
 							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
 								Karan
 							</h4>
-							<p style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
+							<p style={{ fontFamily: 'Inria Sans' }}>
 								Karan une spécialité salée à base de farine de pois chiches que
 								l'on déguste sous forme de sandwich dans un morceau de baguette,
 								le tout saupoudré de cumin; pourquoi de cumin? Tout simplement
@@ -321,15 +330,18 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div className="row d-flex flex-column flex-md-row">
+					<div
+						className="row d-flex flex-column flex-md-row mx-auto"
+						style={{ textAlign: 'center' }}
+					>
 						<div className="col-4">
 							<img src={boudin} alt="image" />
 						</div>
-						<div className="col-8">
+						<div className="col-8 mx-auto">
 							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
 								BOUDIN
 							</h4>
-							<p style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
+							<p style={{ fontFamily: 'Inria Sans' }}>
 								Le boudin est une préparation de charcuterie mise dans des
 								boyaux. Il se consomme froid ou chaud.Les plus anciens ont la
 								larme à l’œil et la salive à la bouche en se partageant le
