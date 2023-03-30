@@ -45,19 +45,19 @@ const FrMaVille = () => {
 					<div className="carousel-item active">
 						<img src={babsidi} className="d-block w-100" />
 						<div className="carousel-caption">
-							<h5 style={{ fontFamily: 'Inria Sans' }}>Bab Sidi Abdelwahab</h5>
+							<h5>Bab Sidi Abdelwahab</h5>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<img src={lala} className="d-block w-100" />
 						<div className="carousel-caption">
-							<h5 style={{ fontFamily: 'Inria Sans' }}>Parc Lalla Aicha</h5>
+							<h5>Parc Lalla Aicha</h5>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<img src={medina} className="d-block w-100" />
 						<div className="carousel-caption">
-							<h5 style={{ fontFamily: 'Inria Sans' }}>Medina </h5>
+							<h5>Medina </h5>
 						</div>
 					</div>
 				</div>
@@ -88,24 +88,16 @@ const FrMaVille = () => {
 			</div>
 			<div className="container">
 				{/* ligne 1  */}
-				<h3
-					className="mt-4"
-					style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-				>
-					QUE DEVRIEZ-VOUS VISITER ?
-				</h3>
+				<h3 className="m-5 text-center">QUE DEVRIEZ-VOUS VISITER ?</h3>
 				<br />
-				<div className="row d-flex flex-column flex-md-row">
-					<div className="col-5">
-						<img src={map} alt="image" />
+				<div className="row d-flex flex-column flex-md-row text-center">
+					<div className="col-md-6">
+						<img className="img-fluid" src={map} alt="image" />
 					</div>
-					<div className="col-2"></div>
 					<br />
-					<div className="col-5">
-						<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-							La ville Oujda
-						</h4>
-						<p className="para" style={{ fontFamily: 'Inria Sans' }}>
+					<div className="col-md-6">
+						<h4>La ville Oujda</h4>
+						<p>
 							Oujda est une ville frontalière du Maroc, située à l'extrême
 							nord-est du pays, à la limite de la région du Rif Oriental, sa
 							proximité avec le port de Nador et avec l'Algérie à 5 km lui
@@ -126,12 +118,13 @@ const FrMaVille = () => {
 				<br />
 				{/* ligne 2 */}
 
-				<div className="row d-flex flex-column flex-md-row">
-					<div className="col-5">
-						<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-							Les habitants d'Oujda (Wjada)
-						</h4>
-						<p className="para" style={{ fontFamily: 'Inria Sans' }}>
+				<div className="row d-flex flex-column flex-md-row text-center">
+					<div className="col-md-6">
+						<img className="img-fluid" src={habitants} alt="image" />
+					</div>
+					<div className="col-md-6">
+						<h4>Les habitants d'Oujda (Wjada)</h4>
+						<p className="para">
 							Les habitants d'Oujda sont connus pour leur hospitalité leur
 							gentillesse envers les visiteurs. Ils sont souvent décrits comme
 							chaleureux, accueillants et ouverts d'esprit. La ville est
@@ -142,25 +135,18 @@ const FrMaVille = () => {
 							pour leur sens de la communauté et leur esprit de solidarité.
 						</p>
 					</div>
-					<div className="col-2"></div>
-					<div className="col-5">
-						<img src={habitants} alt="image" />
-					</div>
 				</div>
 				<br />
 				<br />
 				{/* ligne 3 */}
 
 				<div className="row d-flex flex-column flex-md-row">
-					<div className="col-5">
-						<img src={tradution} alt="image" />
+					<div className="col-md-6">
+						<img className="img-fluid" src={tradution} alt="image" />
 					</div>
-					<div className="col-2"></div>
-					<div className="col-5">
-						<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-							Les Traditions
-						</h4>
-						<p className="para" style={{ fontFamily: 'Inria Sans' }}>
+					<div className="col-md-6">
+						<h4>Les Traditions</h4>
+						<p className="para">
 							Les habitants d'Oujda ont une culture riche en traditions et
 							coutumes locales. Voici quelques-unes des traditions les plus
 							importantes de la ville et de la région :La fête du Mouloud :
@@ -175,28 +161,15 @@ const FrMaVille = () => {
 
 				{/* card */}
 
-				<h3
-					className="mt-4"
-					style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-				>
-					Que devriez-vous visiter ?
-				</h3>
+				<h3 className="mt-4">Que devriez-vous visiter ?</h3>
 				<br />
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
 						<div className="card h-100">
 							<img src={bab} className="card-img-top" alt="..." />
 							<div className="card-body">
-								<h5
-									className="card-title"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
-									Bab El Gharbi
-								</h5>
-								<p
-									className="card-text"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
+								<h5 className="card-title">Bab El Gharbi</h5>
+								<p className="card-text">
 									La vieille ville d'Oujda regorge de ruelles étroites et
 									sinueuses bordées de bâtiments historiques en terre. C'est un
 									endroit idéal pour découvrir l'architecture et la culture
@@ -209,16 +182,8 @@ const FrMaVille = () => {
 						<div className="card h-100">
 							<img src={medina} className="card-img-top" alt="..." />
 							<div className="card-body">
-								<h5
-									className="card-title"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
-									Medina
-								</h5>
-								<p
-									className="card-text"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
+								<h5 className="card-title">Medina</h5>
+								<p className="card-text">
 									La ville de Oujda dans la région du Rif oriental est l’une des
 									villes du Maroc où les traditions sont les plus ancrées du
 									fait de son histoire et de sa population conservatrice. Forte
@@ -232,16 +197,8 @@ const FrMaVille = () => {
 						<div className="card h-100">
 							<img src={lala} className="card-img-top" alt="..." />
 							<div className="card-body">
-								<h5
-									className="card-title"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
-									Parc Lalla-Aicha
-								</h5>
-								<p
-									className="card-text"
-									style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-								>
+								<h5 className="card-title">Parc Lalla-Aicha</h5>
+								<p className="card-text">
 									Non loin de la médina, s'étend le Parc Lalla Aïcha sur une
 									superficie de 20 hectares environ. Créé en 1935, il constitue
 									un lieu de détente pour les habitants d'Oujda. Il offre une
@@ -256,26 +213,16 @@ const FrMaVille = () => {
 
 				{/* ligne 4 */}
 
-				<h3
-					className="mt-4"
-					style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}
-				>
-					Qu’est-ce que tu devrais goûter ?
-				</h3>
+				<h3 className="mt-4">Qu’est-ce que tu devrais goûter ?</h3>
 				<br />
 				<div className="container">
-					<div
-						className="row d-flex flex-column flex-md-row mx-auto"
-						style={{ textAlign: 'center' }}
-					>
+					<div className="row d-flex flex-column flex-md-row mx-auto">
 						<div className="col-4">
 							<img src={ka} alt="image" />
 						</div>
-						<div className="col-8 mx-auto">
-							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-								Kaak
-							</h4>
-							<p style={{ fontFamily: 'Inria Sans' }}>
+						<div className="col-8 mx-auto text-center">
+							<h4>Kaak</h4>
+							<p>
 								Le kâak ou plus correctement ka‘ak, littéralement « gâteau » en
 								arabe classique, est un terme qui peut désigner plusieurs
 								pâtisseries maghrébines et orientales sous forme d'anneaux
@@ -287,18 +234,13 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div
-						className="row d-flex flex-column flex-md-row mx-auto"
-						style={{ textAlign: 'center' }}
-					>
+					<div className="row d-flex flex-column flex-md-row mx-auto">
 						<div className="col-4">
 							<img src={berkoukes} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-								Berkoukes
-							</h4>
-							<p style={{ fontFamily: 'Inria Sans' }}>
+							<h4>Berkoukes</h4>
+							<p>
 								Le berkoukes, appelé aussi berkoukech, avazine ou aïch, est un
 								plat traditionnel du Maghreb, préparé à base de pâtes en forme
 								de gros grains de couscous, de légumes de saison et de viande.Le
@@ -310,18 +252,13 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div
-						className="row d-flex flex-column flex-md-row mx-auto"
-						style={{ textAlign: 'center' }}
-					>
+					<div className="row d-flex flex-column flex-md-row mx-auto">
 						<div className="col-4">
 							<img src={karan} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-								Karan
-							</h4>
-							<p style={{ fontFamily: 'Inria Sans' }}>
+							<h4>Karan</h4>
+							<p>
 								Karan une spécialité salée à base de farine de pois chiches que
 								l'on déguste sous forme de sandwich dans un morceau de baguette,
 								le tout saupoudré de cumin; pourquoi de cumin? Tout simplement
@@ -330,18 +267,13 @@ const FrMaVille = () => {
 						</div>
 					</div>
 					<br />
-					<div
-						className="row d-flex flex-column flex-md-row mx-auto"
-						style={{ textAlign: 'center' }}
-					>
+					<div className="row d-flex flex-column flex-md-row mx-auto">
 						<div className="col-4">
 							<img src={boudin} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4 style={{ textAlign: 'center', fontFamily: 'Inria Sans' }}>
-								BOUDIN
-							</h4>
-							<p style={{ fontFamily: 'Inria Sans' }}>
+							<h4>BOUDIN</h4>
+							<p>
 								Le boudin est une préparation de charcuterie mise dans des
 								boyaux. Il se consomme froid ou chaud.Les plus anciens ont la
 								larme à l’œil et la salive à la bouche en se partageant le
