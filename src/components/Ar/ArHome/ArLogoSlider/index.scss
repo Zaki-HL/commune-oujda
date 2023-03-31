@@ -46,7 +46,7 @@
 }
 
 .slider .slide-track-1 {
-	animation: scroll-l 30s linear infinite;
+	animation: scroll-r 30s linear infinite;
 	display: flex;
 	width: 3500px;
 }
@@ -68,11 +68,11 @@
 	height: auto;
 }
 
-@keyframes scroll-l {
-	0% {
+@keyframes scroll-r {
+	100% {
 			transform: translateX(0);
 	}
-	100% {
+	0% {
 			transform: translateX(calc(-250px * 7));
 	}
 }
