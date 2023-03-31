@@ -3,15 +3,15 @@ import React from 'react';
 import FrLanding from './FrLanding';
 import Articles from './Frarticles';
 import FrMap from './FrMap';
-import Frlogoslider from './Frlogoslider';
+import FrLogoSlider from './FrLogoSlider';
 
 const FrHome = () => {
 	return (
 		<>
 			<FrLanding />
 			<Articles />
+			<FrLogoSlider/>
 			<FrMap />
-			<Frlogoslider/>
 		</>
 	);
 };

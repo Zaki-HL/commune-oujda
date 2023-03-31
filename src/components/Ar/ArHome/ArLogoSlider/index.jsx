@@ -1,7 +1,7 @@
 import './index.scss';
 import React from 'react';
 
-const Frlogoslider = () => {
+const Arlogoslider = () => {
 	return (
 		<>
 			<div className='slider'>
@@ -107,4 +107,4 @@ const Frlogoslider = () => {
 	);
 };
 
-export default Frlogoslider;
+export default Arlogoslider;
