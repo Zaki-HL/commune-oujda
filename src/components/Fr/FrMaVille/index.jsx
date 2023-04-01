@@ -110,7 +110,7 @@ const FrMaVille = () => {
 							Chaque jardin était clos d’un mur en pisé de 1,80 à 2 mètres de
 							haut percé de nombreux trous. Ces jardins constituaient donc un
 							système de défense appréciable. Pas si vite, y’a pas que la médina
-							à voir,
+							à voir.
 						</p>
 					</div>
 				</div>
@@ -122,7 +122,7 @@ const FrMaVille = () => {
 					<div className="col-md-6">
 						<img className="img-fluid" src={habitants} alt="image" />
 					</div>
-					<div className="col-md-6">
+					<div className="col-md-6 mt-4">
 						<h4>Les habitants d'Oujda (Wjada)</h4>
 						<p className="para">
 							Les habitants d'Oujda sont connus pour leur hospitalité leur
@@ -144,7 +144,7 @@ const FrMaVille = () => {
 					<div className="col-md-6">
 						<img className="img-fluid" src={tradution} alt="image" />
 					</div>
-					<div className="col-md-6">
+					<div className="col-md-6 mt-4" style={{textAlign : 'center'}}>
 						<h4>Les Traditions</h4>
 						<p className="para">
 							Les habitants d'Oujda ont une culture riche en traditions et
@@ -161,7 +161,7 @@ const FrMaVille = () => {
 
 				{/* card */}
 
-				<h3 className="mt-4">Que devriez-vous visiter ?</h3>
+				<h3 className="mt-4" style={{textAlign : 'center'}}>Que devriez-vous visiter ?</h3>
 				<br />
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
@@ -213,23 +213,21 @@ const FrMaVille = () => {
 
 				{/* ligne 4 */}
 
-				<h3 className="mt-4">Qu’est-ce que tu devrais goûter ?</h3>
+				<h3 className="mt-4" style={{textAlign : 'center'}}>Qu’est-ce que tu devrais goûter ?</h3>
 				<br />
 				<div className="container">
 					<div className="row d-flex flex-column flex-md-row mx-auto">
 						<div className="col-4">
 							<img src={ka} alt="image" />
 						</div>
-						<div className="col-8 mx-auto text-center">
-							<h4>Kaak</h4>
+
+						<div className="col-8 mx-auto">
+							<h4  className='mt-3 mx-auto text-center'>Kaak</h4>
 							<p>
 								Le kâak ou plus correctement ka‘ak, littéralement « gâteau » en
 								arabe classique, est un terme qui peut désigner plusieurs
 								pâtisseries maghrébines et orientales sous forme d'anneaux
-								Magnifique souvenir ! Il ne se passait pas un jour de l‘aïd sans
-								kâaks sur la table avec les autres gâteaux . Depuis je perpétue
-								la tradition et j’en fais toujours pour le jour de l’aïd el Fitr
-								,jour de fête qui marque la fin du ramadan .
+								Magnifique souvenir !
 							</p>
 						</div>
 					</div>
@@ -239,15 +237,12 @@ const FrMaVille = () => {
 							<img src={berkoukes} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4>Berkoukes</h4>
+							<h4  className='mt-3 text-center'>Berkoukes</h4>
 							<p>
 								Le berkoukes, appelé aussi berkoukech, avazine ou aïch, est un
 								plat traditionnel du Maghreb, préparé à base de pâtes en forme
 								de gros grains de couscous, de légumes de saison et de viande.Le
-								berkoukes est le nom donné au grain de couscous roulé à la main
-								dont la granulométrie est plus importante que celle donnée à la
-								graine de couscous. Selon les régions il est roulé plus ou moins
-								gros.
+								berkoukes est le nom donné au grain de couscous roulé à la main.
 							</p>
 						</div>
 					</div>
@@ -257,7 +252,7 @@ const FrMaVille = () => {
 							<img src={karan} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4>Karan</h4>
+							<h4  className='mt-3 text-center'>Karan</h4>
 							<p>
 								Karan une spécialité salée à base de farine de pois chiches que
 								l'on déguste sous forme de sandwich dans un morceau de baguette,
@@ -272,7 +267,7 @@ const FrMaVille = () => {
 							<img src={boudin} alt="image" />
 						</div>
 						<div className="col-8 mx-auto">
-							<h4>BOUDIN</h4>
+							<h4 className='mt-3 text-center'>BOUDIN</h4>
 							<p>
 								Le boudin est une préparation de charcuterie mise dans des
 								boyaux. Il se consomme froid ou chaud.Les plus anciens ont la
