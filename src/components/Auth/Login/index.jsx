@@ -1,95 +1,219 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export default function (props) {
-	let [authMode, setAuthMode] = useState('signin');
+import {
+	MDBContainer,
+	MDBTabs,
+	MDBTabsItem,
+	MDBTabsLink,
+	MDBTabsContent,
+	MDBTabsPane,
+	MDBBtn,
+	MDBIcon,
+	MDBInput,
+	MDBCheckbox,
+} from 'mdb-react-ui-kit';
 
-	const changeAuthMode = () => {
-		setAuthMode(authMode === 'signin' ? 'signup' : 'signin');
+const Login = () => {
+	const [justifyActive, setJustifyActive] = useState('tab1');
+
+	const handleJustifyClick = value => {
+		if (value === justifyActive) {
+			return;
+		}
+
+		setJustifyActive(value);
 	};
 
-	if (authMode === 'signin') {
-		return (
-			<div className="Auth-form-container">
-				<form className="Auth-form">
-					<div className="Auth-form-content">
-						<h3 className="Auth-form-title">Login</h3>
-						<div className="text-center">
-							Not registered yet?{' '}
-							<span className="link-primary" onClick={changeAuthMode}>
-								Sign Up
-							</span>
-						</div>
-						<div className="form-group mt-3">
-							<label>Email address</label>
-							<input
-								type="email"
-								className="form-control mt-1"
-								placeholder="Enter email"
-							/>
-						</div>
-						<div className="form-group mt-3">
-							<label>Password</label>
-							<input
-								type="password"
-								className="form-control mt-1"
-								placeholder="Enter password"
-							/>
-						</div>
-						<div className="d-grid gap-2 mt-3">
-							<button type="submit" className="btn btn-primary">
-								Submit
-							</button>
-						</div>
-						<p className="text-center mt-2">
-							Forgot <a href="#">password?</a>
-						</p>
-					</div>
-				</form>
-			</div>
-		);
-	}
-
 	return (
-		<div className="Auth-form-container">
-			<form className="Auth-form">
-				<div className="Auth-form-content">
-					<h3 className="Auth-form-title">Sign In</h3>
-					<div className="text-center">
-						Already registered?{' '}
-						<span className="link-primary" onClick={changeAuthMode}>
-							Sign In
-						</span>
-					</div>
-					<div className="form-group mt-3">
-						<label>Full Name</label>
-						<input type="email" className="form-control mt-1" />
-					</div>
-					<div className="form-group mt-3">
-						<label>Email address</label>
-						<input
+		<>
+			<MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+				<MDBTabs
+					pills
+					justify
+					className="mb-3 d-flex flex-row justify-content-between"
+				>
+					<MDBTabsItem>
+						<MDBTabsLink
+							onClick={() => handleJustifyClick('tab1')}
+							active={justifyActive === 'tab1'}
+						>
+							Login
+						</MDBTabsLink>
+					</MDBTabsItem>
+					<MDBTabsItem>
+						<MDBTabsLink
+							onClick={() => handleJustifyClick('tab2')}
+							active={justifyActive === 'tab2'}
+						>
+							Sign up
+						</MDBTabsLink>
+					</MDBTabsItem>
+				</MDBTabs>
+
+				<MDBTabsContent>
+					<MDBTabsPane show={justifyActive === 'tab1'}>
+						<div className="text-center mb-3">
+							<p>Sign in with:</p>
+
+							<div
+								className="d-flex justify-content-between mx-auto"
+								style={{ width: '40%' }}
+							>
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faFacebook} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faInstagram} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faEnvelope} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faLinkedin} />
+								</MDBBtn>
+							</div>
+
+							<p className="text-center mt-3">or:</p>
+						</div>
+
+						<MDBInput
+							wrapperClass="mb-4"
+							label="Email address"
+							id="form1"
 							type="email"
-							className="form-control mt-1"
-							placeholder="Email Address"
 						/>
-					</div>
-					<div className="form-group mt-3">
-						<label>Password</label>
-						<input
+						<MDBInput
+							wrapperClass="mb-4"
+							label="Password"
+							id="form2"
 							type="password"
-							className="form-control mt-1"
-							placeholder="Password"
 						/>
-					</div>
-					<div className="d-grid gap-2 mt-3">
-						<button type="submit" className="btn btn-primary">
-							Submit
-						</button>
-					</div>
-					<p className="text-center mt-2">
-						Forgot <a href="#">password?</a>
-					</p>
-				</div>
-			</form>
-		</div>
+
+						<div className="d-flex justify-content-between mx-4 mb-4">
+							<MDBCheckbox
+								name="flexCheck"
+								value=""
+								id="flexCheckDefault"
+								label="Remember me"
+							/>
+							<a href="!#">Forgot password?</a>
+						</div>
+
+						<MDBBtn className="mb-4 w-100">Sign in</MDBBtn>
+						<p className="text-center">
+							Not a member? <a href="#!">Sign up</a>
+						</p>
+					</MDBTabsPane>
+
+					<MDBTabsPane show={justifyActive === 'tab2'}>
+						<div className="text-center mb-3">
+							<p>Sign in with:</p>
+
+							<div
+								className="d-flex justify-content-between mx-auto"
+								style={{ width: '40%' }}
+							>
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faFacebook} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faInstagram} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faEnvelope} />
+								</MDBBtn>
+
+								<MDBBtn
+									tag="a"
+									color="none"
+									className="m-1"
+									style={{ color: '#1266f1' }}
+								>
+									<FontAwesomeIcon icon={faLinkedin} />
+								</MDBBtn>
+							</div>
+
+							<p className="text-center mt-3">or:</p>
+						</div>
+
+						<MDBInput wrapperClass="mb-4" label="Name" id="form1" type="text" />
+						<MDBInput
+							wrapperClass="mb-4"
+							label="Username"
+							id="form1"
+							type="text"
+						/>
+						<MDBInput
+							wrapperClass="mb-4"
+							label="Email"
+							id="form1"
+							type="email"
+						/>
+						<MDBInput
+							wrapperClass="mb-4"
+							label="Password"
+							id="form1"
+							type="password"
+						/>
+
+						<div className="d-flex justify-content-center mb-4">
+							<MDBCheckbox
+								name="flexCheck"
+								id="flexCheckDefault"
+								label="I have read and agree to the terms"
+							/>
+						</div>
+
+						<MDBBtn className="mb-4 w-100">Sign up</MDBBtn>
+					</MDBTabsPane>
+				</MDBTabsContent>
+			</MDBContainer>
+		</>
 	);
-}
+};
+export default Login;
