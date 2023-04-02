@@ -1,14 +1,15 @@
 import React from 'react';
-import babSidi from '/imgs/bab-sidi.jpg';
-import coteOuest from '/imgs/cote-ouest.jpg';
-import entreeParc from '/imgs/l-entree-du-parc-1.jpg';
-import Elmedina from '/imgs/Ville-Oujda-Maroc.jpg';
-import BabElgharbi from '/imgs/bab-sidi.jpg';
-import SidiYahya from '/imgs/SidiYahya.jpg';
-import Karan from '/imgs/karan.jpg';
-import Kaak from '/imgs/kaak.jfif';
-import berkoukch from '/imgs/1-berkoukes.jpg';
-import boudin from '/imgs/boudin.jpeg';
+import bab from '/imgs/bab.jpg';
+import lala from '/imgs/lala-aicha.jpg';
+import medina from '/imgs/medina.jpg';
+import map from '/imgs/map.png';
+import habitants from '/imgs/habitants.jpg';
+import tradution from '/imgs/tradution.jpg';
+import ka from '/imgs/Kaak.jpg';
+import berkoukes from '/imgs/berkoukes.jpg';
+import karan from '/imgs/karan.jpg';
+import boudin from '/imgs/boudin-blanc.jpg';
+import babsidi from '/imgs/bab-sidi.jpg';
 
 const ArMaVille = () => {
 	return (
@@ -42,21 +43,21 @@ const ArMaVille = () => {
 				</div>
 				<div className="carousel-inner">
 					<div className="carousel-item active">
-						<img src={babSidi} className="d-block w-100" />
+						<img src={babsidi} className="d-block w-100" />
 						<div className="carousel-caption">
 							<h5>باب سيدي عبد الوهاب</h5>
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src={coteOuest} className="d-block w-100" />
+						<img src={lala} className="d-block w-100" />
 						<div className="carousel-caption">
-							<h5>حديقة للا مريم</h5>
+							<h5>حديقة للا عائشة</h5>
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src={entreeParc} className="d-block w-100" />
+						<img src={medina} className="d-block w-100" />
 						<div className="carousel-caption">
-							<h5>حديقة للا عائشة</h5>
+							<h5>المدينة </h5>
 						</div>
 					</div>
 				</div>
@@ -85,238 +86,182 @@ const ArMaVille = () => {
 					<span className="visually-hidden">Next</span>
 				</button>
 			</div>
-			<h2 className="text-center mt-5">حول وجدة</h2>
-			<div
-				style={{ margin: '8px' }}
-				className="row row-cols-1 row-cols-md-3 g-4 "
-			>
-				<div className="col">
-					<div className="card h-100">
-						<div className="card-body">
-							<h5 className="card-title">مدينة وجدة</h5>
-							<p className="card-text">
-								وجدة هي مدينة تقع في شرق المغرب ، بالقرب من
-								الحدود مع الجزائر. إنها محافظة منطقة
-								الشرقية ويبلغ عدد سكانها حوالي 500000 نسمة. والمدينة هي
-								معروفة بتراثها التاريخي والثقافي. لديها
-								العديد من المعالم والمواقع السياحية مثل المدينة المنورة
-								من وجدة ، الجامع الكبير ، قصبة وجدة ، المكان
-								محمد السادس ، ساحة 16 نوفمبر ومتحف وجدة. وجدة
-								هو أيضا مركز اقتصادي مهم في المنطقة. هي
-								مطار دولي ومحطة سكة حديد
-								يربط المدن الرئيسية في المغرب.
-							</p>
-						</div>
+			<div className="container">
+				{/* ligne 1  */}
+				<h3 className="m-5 text-center">ما الذي يجب أن تزوره ؟</h3>
+				<br />
+				<div className="row d-flex flex-column flex-md-row text-center">
+					<div className="col-md-6">
+						<img className="img-fluid" src={map} alt="image" />
+					</div>
+					<br />
+					<div className="col-md-6">
+						<h4>مدينة وجدة</h4>
+						<p>
+							وجدة هي مدينة حدودية في المغرب ، تقع في أقصى الحدود شمال شرق
+							البلاد ، على حافة منطقة الريف الشرقي ، لها القرب من ميناء الناظور
+							ومع الجزائر على بعد 5 كم يجعل من الممكن لعب دور مفترق طرق بين
+							المغرب والجزائر ، يبلغ عدد سكانها أكثر من مليون نسمة. مدينة وجدة
+							بلغ طابعها العربي الإسلامي مساحة خمسة وعشرين هكتار ، موطن للعديد
+							من المعالم ذات القيمة التاريخية لا يمكن إنكاره ، كان محاطًا بحزام
+							من الحدائق المزروعة من أشجار الزيتون حزام سميك ألف متر في بعض
+							الأماكن. كانت كل حديقة محاطة بجدار من الطوب اللبن بارتفاع 1.80 إلى
+							2 متر. أعلى مثقوب مع العديد من الثقوب. لذلك شكلت هذه الحدائق أ
+							نظام دفاع قيم. ليس بهذه السرعة ، إنها ليست المدينة فقط يمتلك.
+						</p>
 					</div>
 				</div>
-				<div className="col">
-					<div className="card h-100">
-						<div className="card-body">
-							<h5 className="card-title">اهل وجدة (Wjada)</h5>
-							<p className="card-text">
-								يُعرف سكان وجدة بكرم ضيافتهم وحسن ضيافتهم
-								اللطف للزوار. غالبا ما توصف بأنها
-								دافئ ومرحب ومنفتح. والمدينة هي
-								معروف أيضًا بتنوعه الثقافي ، مع
-								التأثيرات المغربية والعربية والبربرية.سكان وجدة
-								فخورون بتراثهم الثقافي والتاريخي وهم
-								غالبًا ما يكونون مرتبطين جدًا بمدينتهم ومنطقتهم. هم
-								معروفون أيضًا بإحساسهم بالانتماء للمجتمع و
-								روح التضامن.
-							</p>
-						</div>
+				<br />
+				<br />
+				{/* ligne 2 */}
+
+				<div className="row d-flex flex-column flex-md-row text-center">
+					<div className="col-md-6">
+						<img className="img-fluid" src={habitants} alt="image" />
+					</div>
+					<div className="col-md-6 mt-4">
+						<h4>سكان وجدة</h4>
+						<p className="para">
+							La traduction est trop longue pour être enregistrée يعرف أهل وجدة
+							بكرم ضيافتهم اللطف للزوار. غالبا ما توصف بأنها دافئ ومرحب ومنفتح.
+							والمدينة هي معروف أيضًا بتنوعه الثقافي ، مع التأثيرات المغاربة
+							والعرب والبربر اهل وجدة يفتخرون بها تراثهم الثقافي والتاريخي ،
+							وغالبًا ما يكونون كذلك تعلق على مدينتهم ومنطقتهم. هم معروفون أيضا
+							لإحساسهم بالمجتمع وروح التضامن.
+						</p>
 					</div>
 				</div>
-				<div className="col">
-					<div className="card h-100">
-						<div className="card-body">
-							<h5 className="card-title">التقاليد</h5>
-							<p className="card-text">
-								سكان وجدة لديهم ثقافة غنية في التقاليد و
-								العادات والتقاليد المحلية. هنا بعض من أكثر
-								المدينة والمنطقة: مهرجان المولود:
-								إنه الاحتفال بمولد النبي محمد. هي
-								يتم الاحتفال به كل عام في وجدة وفي جميع أنحاء منطقة
-								الشرقية. غالبًا ما يرتبط بالطقوس الدينية و
-								تُعزف بأدوات مثل الغيمبري والكراكيب
-								والطبل.
-							</p>
-						</div>
+				<br />
+				<br />
+				{/* ligne 3 */}
+
+				<div className="row d-flex flex-column flex-md-row">
+					<div className="col-md-6">
+						<img className="img-fluid" src={tradution} alt="image" />
+					</div>
+					<div className="col-md-6 mt-4" style={{ textAlign: 'center' }}>
+						<h4>التقاليد</h4>
+						<p className="para">
+							سكان وجدة لديهم ثقافة غنية في التقاليد و العادات والتقاليد
+							المحلية. هنا بعض من أكثر المدينة والمنطقة: مهرجان المولود: إنه
+							الاحتفال بمولد النبي محمد. هي يتم الاحتفال به كل عام في وجدة وفي
+							جميع أنحاء منطقة الشرقية. غالبًا ما يرتبط بالطقوس الدينية و تُعزف
+							بأدوات مثل الغيمبري ، والكراكيبس ، و الطبل.
+						</p>
 					</div>
 				</div>
-			</div>
-			<h3 className="text-center mt-5">ماذا يجب ان تزور؟</h3>
-			<div className="container p-5 d-flex flex-column align-items-center">
-				<div className="card mb-3" style={{ maxWidth: '540px' }}>
-					<div className="row g-0">
-						<div className="col-md-4">
-							<img
-								src={Elmedina}
-								className="img-fluid w-100 h-100 object-fit-cover rounded-start"
-								alt="Card Image"
-							/>
-						</div>
-						<div className="col-md-8">
-							<div className="card-body">
-								<h5 className="card-title">لمدينة وجدة</h5>
-								<p className="card-text">
-									{' '}
-									مدينة وجدة القديمة مليئة بالشوارع الضيقة و
-									طرق متعرجة تصطف على جانبيها مباني ترابية تاريخية. هذا
-									مكان رائع لتجربة العمارة والثقافة
-									مغربي.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="card mb-3" style={{ maxWidth: '540px' }}>
-					<div className="row g-0">
-						<div className="col-md-4">
-							<img
-								src={SidiYahya}
-								className="img-fluid w-100 object-fit-cover rounded-start"
-								alt="Card Image"
-							/>
-						</div>
-						<div className="col-md-8">
-							<div className="card-body">
-								<h5 className="card-title">سيدي يحيى</h5>
-								<p className="card-text">
-									هذه البوابة التاريخية هي نصب تذكاري مهم للمدينة.
-									يعود تاريخه إلى القرن الثامن عشر وهو مزين بالفسيفساء و
-									الأنماط التقليدية.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="card mb-3" style={{ maxWidth: '540px' }}>
-					<div className="row g-0">
-						<div className="col-md-4">
-							<img
-								src={BabElgharbi}
-								className="img-fluid w-100 h-100 object-fit-cover rounded-start"
-								alt="Card Image"
-							/>
-						</div>
-						<div className="col-md-8">
+
+				{/* card */}
+
+				<h3 className="mt-4" style={{ textAlign: 'center' }}>
+					ماذا يجب ان تزور؟
+				</h3>
+				<br />
+				<div className="row row-cols-1 row-cols-md-3 g-4">
+					<div className="col">
+						<div className="card h-100">
+							<img src={bab} className="card-img-top" alt="..." />
 							<div className="card-body">
 								<h5 className="card-title">باب الغربي</h5>
 								<p className="card-text">
-									باب الغربي هو أحد البوابات التاريخية للمدينة
-									من وجدة ، وتقع في شرق المغرب. هذا الباب
-									تعتبر من أهم رموز المدينة.
-									{' '}
+									مدينة وجدة القديمة مليئة بالشوارع الضيقة و طرق متعرجة تصطف على
+									جانبيها مباني ترابية تاريخية. هذا مكان رائع لتجربة العمارة
+									والثقافة مغربي.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col">
+						<div className="card h-100">
+							<img src={medina} className="card-img-top" alt="..." />
+							<div className="card-body">
+								<h5 className="card-title">المدينة</h5>
+								<p className="card-text">
+									مدينة وجدة في منطقة الريف الشرقي هي واحدة من مدن المغرب حيث
+									التقاليد هي الأكثر رسوخًا في حقيقة تاريخها وسكانها المحافظين.
+									قوي من تاريخ الألفية ، وجدة لا تزال تحتفظ بقايا ماضيها المجيد.
+									هل سنقدم لك جولة إرشادية صغيرة؟
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col">
+						<div className="card h-100">
+							<img src={lala} className="card-img-top" alt="..." />
+							<div className="card-body">
+								<h5 className="card-title">حديقة للا عائشة</h5>
+								<p className="card-text">
+									غير بعيد عن المدينة تمتد حديقة للا عائشة أ مساحة حوالي 20
+									هكتار. تم إنشاؤه في عام 1935 ، وهو يشكل مكان استرخاء لسكان
+									وجدة. يعرض منطقة ترفيهية جميلة بها حمامات سباحة وملاعب النوادي
+									الرياضية والتنس وركوب الخيل ونواديها معدات لعب الأطفال ...
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<h3 className="m-5 text-center">ماذا يجب أن تتذوق؟</h3>
-			<div className="container">
-				<div className="row justify-content-center">
-					<div className="col-8 col-lg-6">
-						<div className="card mb-3">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img
-										src={Karan}
-										className="img-fluid object-fit-cover rounded-start h-100"
-										alt="Card Image"
-									/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title">كاران</h5>
-										<p className="card-text">
-											كاران من طحين البازلاء اللذيذة
-											الكتاكيت التي تؤكل على شكل شطيرة في
-											قطعة من الرغيف الفرنسي ، مرشوشة بالكمون ؛ لماذا
-											كمون؟ ببساطة لتجنب الانتفاخ
-											بسبب دقيق الحمص.
-											{' '}
-										</p>
-									</div>
-								</div>
-							</div>
+
+				{/* ligne 4 */}
+
+				<h3 className="mt-4" style={{ textAlign: 'center' }}>
+					ماذا يجب أن تتذوق؟
+				</h3>
+				<br />
+				<div className="container">
+					<div className="row d-flex flex-column flex-md-row mx-auto">
+						<div className="col-4">
+							<img src={ka} alt="image" />
+						</div>
+
+						<div className="col-8 mx-auto">
+							<h4 className="mt-3 mx-auto text-center">كعك</h4>
+							<p>
+								الكاك أو الأصح كعك ، حرفيا "كعكة" في اللغة العربية الفصحى ،
+								مصطلح يمكن أن يشير إلى العديد معجنات شمال أفريقية وشرقية على شكل
+								حلقات ذاكرة رائعة!
+							</p>
 						</div>
 					</div>
-
-					<div className="col-8 col-lg-6">
-						<div className="card mb-3">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img
-										src={Kaak}
-										className="img-fluid object-fit-cover rounded-start h-100"
-										alt="Card Image"
-									/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title">كعك</h5>
-										<p className="card-text">
-											الكعك أو الأصح كعك ، حرفيا "كعكة
-											في اللغة العربية الفصحى ، مصطلح يمكن أن يعين
-											عدة معجنات شمال أفريقية وشرقية على شكل
-											من الخواتم.
-											{' '}
-										</p>
-									</div>
-								</div>
-							</div>
+					<br />
+					<div className="row d-flex flex-column flex-md-row mx-auto">
+						<div className="col-4">
+							<img src={berkoukes} alt="image" />
+						</div>
+						<div className="col-8 mx-auto">
+							<h4 className="mt-3 text-center">بركوكش</h4>
+							<p>
+								البركوك ، وتسمى أيضًا بركوكيتش ، أفازين أو آش ، هي أ طبق مغاربي
+								تقليدي محضر من المكرونة المشكلة حبات كبيرة من الكسكس والخضروات
+								الموسمية واللحوم. البركوك هو الاسم الذي يطلق على حبة الكسكس
+								الملفوفة باليد.
+							</p>
 						</div>
 					</div>
-
-					<div className="col-8 col-lg-6">
-						<div className="card mb-3">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img
-										src={berkoukch}
-										className="img-fluid object-fit-cover object-fit-cover rounded-start h-100"
-										alt="Card Image"
-									/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title">باركوكش</h5>
-										<p className="card-text">
-											البركوك ، وتسمى أيضًا بركوكش ، أفازين أو آيش ،
-											هو طبق مغاربي تقليدي محضر من
-											مكرونة على شكل حبات كبيرة من الكسكس والخضروات
-											الموسم واللحوم.
-											{' '}
-										</p>
-									</div>
-								</div>
-							</div>
+					<br />
+					<div className="row d-flex flex-column flex-md-row mx-auto">
+						<div className="col-4">
+							<img src={karan} alt="image" />
+						</div>
+						<div className="col-8 mx-auto">
+							<h4 className="mt-3 text-center">كاران</h4>
+							<p>
+								كران طبق لذيذ من دقيق الحمص تؤكل على شكل شطيرة في قطعة من الرغيف
+								الفرنسي ، رش كل الكمون. لماذا الكمون؟ بكل بساطة لمنع الانتفاخ من
+								دقيق الحمص
+							</p>
 						</div>
 					</div>
-
-					<div className="col-8 col-lg-6">
-						<div className="card mb-3">
-							<div className="row g-0">
-								<div className="col-md-4">
-									<img
-										src={boudin}
-										className="img-fluid rounded-start h-100"
-										alt="Card Image"
-									/>
-								</div>
-								<div className="col-md-8">
-									<div className="card-body">
-										<h5 className="card-title">بودان</h5>
-										<p className="card-text">
-											بودان هو مستحضر تشاركوتيري
-											أغلفة. تؤكل ساخنة أو باردة.
-											{' '}
-										</p>
-									</div>
-								</div>
-							</div>
+					<br />
+					<div className="row d-flex flex-column flex-md-row mx-auto">
+						<div className="col-4">
+							<img src={boudin} alt="image" />
+						</div>
+						<div className="col-8 mx-auto">
+							<h4 className="mt-3 text-center">بودنغ </h4>
+							<p>
+								بودان هو مستحضر تشاركوتيري أغلفة. يستهلك باردا أو ساخنا في الفم
+								.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -324,5 +269,4 @@ const ArMaVille = () => {
 		</>
 	);
 };
-
 export default ArMaVille;
