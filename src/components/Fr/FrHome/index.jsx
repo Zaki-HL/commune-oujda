@@ -10,7 +10,7 @@ const FrHome = () => {
 		<>
 			<FrLanding />
 			<Articles />
-			<FrLogoSlider/>
+			<FrLogoSlider />
 			<FrMap />
 		</>
 	);
