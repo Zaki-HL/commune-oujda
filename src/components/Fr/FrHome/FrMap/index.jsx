@@ -148,7 +148,7 @@ function FrMap() {
 	}
 
 	return (
-		<div className="container">
+		<>
 			<MapContainer
 				center={mapCenter}
 				zoom={16.5}
@@ -194,7 +194,7 @@ function FrMap() {
 					</button>
 				))}
 			</div>
-		</div>
+		</>
 	);
 }
 
