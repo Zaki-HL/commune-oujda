@@ -38,9 +38,9 @@
 }
 
 .slider .slide-track-1 {
-	animation: scroll-l 30s linear infinite;
+	animation: scroll-l 20s linear infinite;
 	display: flex;
-	width: 3500px;
+	width: 110%;
 }
 
 .slider .slide {
@@ -51,6 +51,7 @@
 	text-align: center;
 }
 .slider .slide img {
+	object-fit: contain;
 	width: 180px;
 	padding: 1pc;
 	vertical-align: middle;
