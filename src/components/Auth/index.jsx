@@ -1,12 +1,13 @@
 import React from 'react';
-import { Outlet, Navigate } from 'react-router-dom';
+import { Outlet, Navigate, redirect } from 'react-router-dom';
 
 const Auth = () => {
-	const auth = { token: 'null' };
+	const isLoggedIn = localStorage.getItem('loggedin');
 
-	if (!auth.token) {
+	if (!isLoggedIn) {
 		return <Navigate to="/login" />;
 	}
+
 	return <Outlet />;
 };
 

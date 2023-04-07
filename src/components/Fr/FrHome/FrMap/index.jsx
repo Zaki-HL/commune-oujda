@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import markerImg from '/imgs/map-mark.png';
 import L from 'leaflet';
 
 function FrMap() {
 	const [mapCenter, setMapCenter] = useState([34.68361, -1.91475]);
+	const mapRef = useRef();
 	const markers = [
 		{
 			position: [34.6836111, -1.9152972, 19],
@@ -137,15 +138,20 @@ function FrMap() {
 	const customIcon = new L.Icon({
 		iconUrl: markerImg,
 		iconSize: [45],
-		iconAnchor: [22, 94],
-		popupAnchor: [-3, -76],
+		iconAnchor: [22, 45],
+		popupAnchor: [-3, -45],
 	});
 
 	function MapUpdater() {
 		const map = useMap();
 		map.setView(mapCenter);
+
 		return null;
 	}
+
+	const handleButtonClick = position => {
+		setMapCenter(position);
+	};
 
 	return (
 		<>
@@ -154,6 +160,7 @@ function FrMap() {
 				zoom={16.5}
 				scrollWheelZoom={true}
 				style={{ minHeight: '50vh', minWidth: '100%' }}
+				ref={mapRef}
 			>
 				<MapUpdater />
 				<TileLayer
@@ -188,7 +195,7 @@ function FrMap() {
 					<button
 						className="btn btn-primary me-1 my-1"
 						key={marker.text}
-						onClick={() => setMapCenter(marker.position)}
+						onClick={() => handleButtonClick(marker.position)}
 					>
 						{marker.text}
 					</button>

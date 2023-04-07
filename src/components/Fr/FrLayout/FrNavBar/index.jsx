@@ -6,6 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 
 const FrNavBar = () => {
+	function fakeLogOut() {
+		localStorage.removeItem('loggedin');
+	}
+
 	return (
 		<nav className="navbar navbar-expand-md d-flex">
 			<div className="container-fluid mx-1 fw-bold">
@@ -68,6 +72,11 @@ const FrNavBar = () => {
 						<li>
 							<NavLink className="dropdown-item" to="/ar">
 								Ar
+							</NavLink>
+						</li>
+						<li onClick={fakeLogOut}>
+							<NavLink className={'dropdown-item'} to="/fr">
+								Déconnecter
 							</NavLink>
 						</li>
 					</ul>

@@ -5,6 +5,7 @@ createServer({
 		articles: Model,
 		evenements: Model,
 		annonces: Model,
+		users: Model,
 	},
 
 	seeds(server) {
@@ -198,7 +199,8 @@ createServer({
 			date2: 'Mars',
 			date2_ar: 'مارس',
 			body1: 'Agence Nationale de la Sécurité Routière (NARSA)',
-			body2: 'Appel à candidature pour le poste de Chef de service (Services centraux)',
+			body2:
+				'Appel à candidature pour le poste de Chef de service (Services centraux)',
 			body1_ar: 'الوكالة الوطنية للسلامة على الطرق (NARSA)',
 			body2_ar: 'دعوة لتقديم الطلبات لمنصب رئيس الخدمة (الخدمات المركزية)',
 			body3: '1',
@@ -215,9 +217,11 @@ createServer({
 			date: '15',
 			date2: 'Mars',
 			date2_ar: 'مارس',
-			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
+			body1:
+				'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			body2: 'expert',
-			body1_ar: 'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
+			body1_ar:
+				'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
 			body2_ar: 'خبير',
 			body3: '1',
 			body4: '15 / 03 / 2023',
@@ -233,9 +237,11 @@ createServer({
 			date: '15',
 			date2: 'Mars',
 			date2_ar: 'مارس',
-			body1: 'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
+			body1:
+				'Ministère de la Transition énergétique et du Développement durable - Département du Développement durable',
 			body2: 'expert',
-			body1_ar: 'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
+			body1_ar:
+				'وزارة انتقال الطاقة والتنمية المستدامة - إدارة التنمية المستدامة',
 			body2_ar: 'خبير',
 			body3: '1',
 			body4: '15 / 03 / 2023',
@@ -315,6 +321,14 @@ createServer({
 			pdf: '/docs/file8.pdf',
 		});
 		// End Annonces
+		// Add User
+		server.create('user', {
+			id: '123',
+			email: 'b@b.com',
+			password: 'p123',
+			name: 'Bob',
+		});
+		// End User
 	},
 
 	routes() {
@@ -347,6 +361,28 @@ createServer({
 		this.get('/annonces/:id', (schema, request) => {
 			const id = request.params.id;
 			return schema.annonces.find(id);
+		});
+
+		this.post('/login', (schema, request) => {
+			const { email, password } = JSON.parse(request.requestBody);
+			// This is an extremely naive version of authentication. Please don't
+			// do this in the real world, and never save raw text passwords
+			// in your database 😇
+			const foundUser = schema.users.findBy({ email, password });
+			if (!foundUser) {
+				return new Response(
+					401,
+					{},
+					{ message: 'No user with those credentials found!' },
+				);
+			}
+
+			// At the very least, don't send the password back to the client 😅
+			foundUser.password = undefined;
+			return {
+				user: foundUser,
+				token: "Enjoy your pizza, here's your tokens.",
+			};
 		});
 	},
 });
