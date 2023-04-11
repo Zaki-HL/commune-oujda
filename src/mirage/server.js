@@ -52,17 +52,7 @@ createServer({
 			image: '/imgs/hajj.jpeg',
 			date: '13 / 03 / 2023',
 		});
-		server.create('article', {
-			id: '5',
-			title:
-				'Le Maroc doit adapter son économie à la menace climatique croissante',
-			title_ar: 'يجب على المغرب تكييف اقتصاده مع التهديد المناخي المتزايد			',
-			body: 'Le Maroc doit adapter son économie pour faire face à la menace croissante du changement climatique qui occasionne des sécheresses plus fréquentes, a indiqué la ministre de l Économie et des Finances, Nadia Fettah Alaoui.',
-			body_ar:
-				'قالت وزيرة الاقتصاد والمالية نادية فتاح العلوي إن المغرب يجب أن يكيّف اقتصاده لمواجهة التهديد المتزايد للتغير المناخي الذي يتسبب في مزيد من موجات الجفاف المتكررة.			',
-			image: '/imgs/image2.jpeg',
-			date: '12 / 03 / 2023',
-		});
+
 		server.create('article', {
 			id: '6',
 			title:
@@ -102,18 +92,6 @@ createServer({
 		// End Article
 
 		// Start Evenements
-		server.create('evenement', {
-			id: '1',
-			title:
-				'Festival Action: Danse 7 Oujda & Casablanca Au programme: Gaby Saranouffi Low Rize...',
-			title_ar:
-				'مهرجان أكشن: رقص 7 وجدة والدار البيضاء على برنامج: غابي سارانوفي لو ريزي ...			',
-			body: 'Action danse est une manifestation organisée par des jeunes et pour les jeunes et qui a pour vocation de sensibiliser les jeunes marocains à la danse en générale et à la danse contemporaine en particulier. Un festival en constante évolution, « Action Danse » s’adapte et innove d’année en année pour s’harmoniser autant que possible avec le stagiaire qui découvre et le spectateur curieux. Ne pas choquer mais déplacer poétiquement les repères pour redonner un nouveau visage à la danse au Maroc, tel est l’objectif d’Action Danse. Les éditions précédentes se sont intéressées à Casablanca, Rabat et Meknès. En 2011, l’association Fleur d’Orange fait voyager ACTION DANSE dans l’Oriental ; Oujda et Nador.',
-			body_ar:
-				'أكشن دانسي هو حدث ينظمه الشباب وللشباب ويهدف إلى توعية الشباب المغربي بالرقص بشكل عام والرقص المعاصر بشكل خاص.	مهرجان في تطور مستمر ، يتكيف "Action Danse" ويبتكر من سنة إلى أخرى لينسق قدر الإمكان مع المتدرب الذي يكتشف والمشاهد الفضولي. ليس الصدمة ولكن لتحريك المعايير بشكل شاعرى لإعطاء وجه جديد للرقص في المغرب ، هذا هو الهدف من Action Danse.	ركزت الإصدارات السابقة على الدار البيضاء والرباط ومكناس. في عام 2011 ، قامت جمعية Fleur d’Orange بالسفر ACTION DANSE في المنطقة الشرقية ؛ وجدة والناظور',
-			image: '/imgs/festivale.jpg',
-			date: '1-9 / 05 / 2023',
-		});
 		server.create('evenement', {
 			id: '2',
 			title:
@@ -335,6 +313,8 @@ createServer({
 		this.namespace = 'api';
 		this.logging = false;
 		// this.timing = 2000
+
+		this.passthrough('https://api.emailjs.com/**');
 
 		this.get('/articles', (schema, request) => {
 			return schema.articles.all();
