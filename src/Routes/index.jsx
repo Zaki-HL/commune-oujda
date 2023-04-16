@@ -28,6 +28,9 @@ import ArArticleDetail from '../components/Ar/ArArticles/ArArticleDetail';
 import ArEvenements from '../components/Ar/ArEvenements';
 import ArEvenementDetail from '../components/Ar/ArEvenements/ArEvenementDetail';
 import ArReclamation from '../components/Ar/ArReclamation';
+import FrServices from '../components/Fr/FrServices';
+import E_Services from '../components/Fr/FrServices/E_Services';
+import Procedures_ad from '../components/Fr/FrServices/Procedures_ad';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -38,6 +41,11 @@ const router = createBrowserRouter(
 			<Route path="/fr" element={<FrLayout />}>
 				<Route path="*" element={<FrError />} />
 				<Route index element={<FrHome />} />
+				<Route path="services">
+					<Route index element={<FrServices />} />
+					<Route path="e-services" element={<E_Services />} />
+					<Route path="procedures-ad" element={<Procedures_ad />} />
+				</Route>
 				<Route path="annonces" element={<FrAnnonces />} />
 				<Route path="annonces/:id" element={<FrAnnonceDetail />} />
 				<Route path="ma-ville" element={<FrMaVille />} />

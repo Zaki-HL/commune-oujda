@@ -37,6 +37,9 @@ const FrNavBar = () => {
 					id="navbarNavAltMarkup"
 				>
 					<div className="navbar-nav">
+						<NavLink className="nav-link text-dark" to="/fr" end>
+							Acceuil
+						</NavLink>
 						<NavLink className="nav-link text-dark" to="annonces">
 							Annonces
 						</NavLink>
