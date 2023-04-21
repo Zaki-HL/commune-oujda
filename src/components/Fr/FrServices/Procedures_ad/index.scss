@@ -1,0 +1,27 @@
+.aga_news_bg {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, #000);
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.aga_news_content {
+	// position: absolute;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
+	// padding: 20px;
+	text-decoration: none !important;
+	color: #000000;
+	z-index: 10;
+	transition: 250ms;
+	font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.4;
+	font-size: calc(1.275rem + .3vw);
+}
